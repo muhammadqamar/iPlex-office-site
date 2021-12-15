@@ -1,0 +1,63 @@
+.main-about {
+  background: #000;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+
+  .about-informactiion {
+    max-width: 1440px;
+    padding: 140px 230px 100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+    .pages-name {
+      width: 271.75px;
+      color: #fff;
+
+      .page-name-1 {
+        font-size: 54px;
+        font-weight: 700;
+        line-height: 59.4px;
+        margin-bottom: 35px;
+        color: #fff;
+
+        cursor: pointer;
+        &:hover {
+          color: #f9d633;
+        }
+      }
+    }
+    .addres {
+      width: 275px;
+      :first-child {
+        margin-bottom: 15px;
+      }
+      .addres-name {
+        font-size: 21px;
+        font-weight: 500;
+        line-height: 39.9px;
+        color: #fff;
+      }
+      .hon-li {
+        cursor: pointer;
+        &:hover {
+          color: #f9d633;
+        }
+      }
+    }
+    .media-links {
+      width: 132.14px;
+      .lnks {
+        font-size: 21px;
+        font-weight: 500;
+        line-height: 39.9px;
+        color: #fff;
+
+        &:hover {
+          color: #f9d633;
+        }
+      }
+    }
+  }
+}

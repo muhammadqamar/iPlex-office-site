@@ -12,11 +12,24 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/static/img`,
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: `${__dirname}/markdown`,
+        name: "markdowns",
       },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-remark`,
+    `gatsby-remark-images`,
+    `gatsby-plugin-sass`,
+    {
+      resolve: "gatsby-plugin-netlify-cms",
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
