@@ -1,0 +1,45 @@
+.hero-section-page {
+  width: 100%;
+  background-color: black;
+  .bg-section-page {
+    max-width: 1440px;
+    margin: auto;
+    padding: 140px 45px 0;
+    @media (max-width: 768px) {
+      padding: 110px 15px 0;
+    }
+    .hero-hd {
+      max-width: 500px;
+      margin: 0 auto 40px;
+      font-size: 45px;
+      text-align: center;
+      font-weight: bold;
+      line-height: 54px;
+      color: #fff;
+      @media (max-width: 767px) {
+        font-size: 36px;
+        text-align: left;
+        line-height: 43.2px;
+        padding-left: 15px;
+      }
+      .main-word {
+        font-size: 45px;
+        font-weight: bold;
+        padding: 5px 5px;
+        background-color: #f9d633;
+        line-height: 54px;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        @media (max-width: 767px) {
+          font-size: 36px;
+          text-align: left;
+          line-height: 43.2px;
+        }
+      }
+    }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.team-card {
+  margin-bottom: 40px;
+  .img-bx {
+    padding: 0px 15px;
+    margin-bottom: 15px;
+    .img-person {
+      max-width: 307px;
+      height: 342px;
+    }
+  }
+  .person-detail {
+    width: 307px;
+    text-align: center;
+    .person-hd {
+      font-size: 25px;
+      margin-bottom: 10px;
+      font-weight: 600;
+      line-height: 32.5px;
+      color: #fff;
+      @media (max-width: 767) {
+        font-size: 21px;
+        line-height: 27.3px;
+      }
+    }
+    .person-pst {
+      font-size: 21px;
+      font-weight: normal;
+      line-height: 25.2px;
+      color: #fff;
+      @media (max-width: 767) {
+        font-size: 17px;
+        line-height: 20.4px;
+      }
+    }
+  }
+}

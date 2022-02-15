@@ -1,0 +1,87 @@
+.main-footer-box {
+  width: 100%;
+  background-color: black;
+  color: white;
+
+  .footer-boxs {
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 60px 0;
+    margin: auto;
+    @media (max-width: 991px) {
+      padding: 40px 25px 0;
+    }
+
+    @media (max-width: 991px) {
+      flex-direction: column;
+    }
+    .footer-logo {
+      width: 112px;
+      height: 59px;
+      margin: 0 120px 40px 0px;
+      flex-shrink: 0;
+      @media (max-width: 991px) and (min-width: 550px) {
+        margin: 0 auto 40px;
+      }
+      @media (max-width: 550px) {
+        margin: 0 0 40px;
+      }
+    }
+    .footre-pages {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      @media (max-width: 767px) {
+        flex-direction: column;
+      }
+      .f-hd {
+        font-size: 24px;
+        line-height: 1.2;
+        margin-bottom: 30px;
+        color: #fff;
+        font-weight: 500;
+        @media (max-width: 768px) {
+          margin-bottom: 22px;
+        }
+      }
+      .footer-bx2 {
+        margin-bottom: 40px;
+        .bx-list {
+          .unoder-list {
+            .item {
+              max-width: 225px;
+              list-style-type: none;
+              color: #fff;
+              font-size: 18px;
+              line-height: 2;
+              font-weight: normal;
+              .f-tag {
+                text-decoration: none;
+                color: white;
+                &:hover {
+                  color: #f9d633;
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .note-para {
+    color: #fff;
+    font-size: 18px;
+    display: block;
+    text-align: center;
+    font-weight: 300;
+    line-height: 2;
+    padding-bottom: 30px;
+    @media (max-width: 767px) {
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 10px 25px 20px;
+      text-align: left;
+    }
+  }
+}

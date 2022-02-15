@@ -1,0 +1,183 @@
+.iplex-contact-container {
+  background-color: black;
+  padding: 125px 60px 50px;
+  width: 1047px;
+  overflow: auto;
+
+  @media (max-width: 768px) {
+    padding: 100px 25px 50px;
+  }
+
+  .bg-heading {
+    font-size: 44px;
+    line-height: 52.8px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 40px;
+    @media (max-width: 767px) {
+      font-size: 32px;
+    }
+  }
+  .form-section {
+    color: white;
+    margin: 16px 0;
+    .form-box {
+      display: flex;
+      justify-content: space-between;
+      @media (max-width: 768px) {
+        flex-wrap: wrap;
+      }
+      .form-bx1 {
+        width: 400px;
+        overflow: auto;
+        @media (max-width: 1260px) and (min-width: 779px) {
+          width: 300px;
+          margin-right: 25px;
+          padding-top: 22px;
+        }
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+        .main-hd {
+          margin: 33px 0 12px !important;
+          font-size: 19px !important;
+          font-weight: 600;
+          line-height: 22.8px;
+        }
+        .txt-eml {
+          margin: 20px 0 33px;
+          .input {
+            font-size: 18px !important;
+            line-height: 27px;
+            border: none !important;
+            background-color: transparent;
+            border-bottom: 1px solid #8c8c8c !important;
+            padding-bottom: 9px !important;
+            font-weight: 300;
+            color: #fff;
+            width: 100%;
+            outline: none;
+
+            &::placeholder {
+              color: #fff;
+            }
+          }
+          .error {
+            font-size: 13px;
+            color: #f9d633;
+            font-weight: normal;
+            line-height: 19.512px;
+            // width: 400px;
+          }
+        }
+      }
+      .form-bx2 {
+        width: 400px;
+        overflow: auto;
+        @media (max-width: 1220px) and (min-width: 779px) {
+          width: 300px;
+        }
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+        padding-top: 7px;
+        .main-hd {
+          margin: 33px 0 12px !important;
+          font-size: 19px !important;
+          font-weight: 600;
+          line-height: 22.8px;
+        }
+        .pst-fle {
+          margin: 20px 0 33px;
+          .choice {
+            font-size: 18px !important;
+            line-height: 27px;
+            border: none !important;
+            background-color: transparent;
+            border-bottom: 1px solid #8c8c8c !important;
+            padding-bottom: 9px !important;
+            font-weight: 300;
+            color: #fff;
+            outline: none;
+            width: 100%;
+
+            option {
+              color: black;
+              width: 100px !important;
+            }
+          }
+          .error {
+            font-size: 13px;
+            color: #f9d633;
+            font-weight: normal;
+            line-height: 19.512px;
+            // width: 400px;
+          }
+          .input {
+            font-size: 18px !important;
+            line-height: 27px;
+            border: none !important;
+            background-color: transparent;
+            border-bottom: 1px solid #8c8c8c !important;
+            padding-bottom: 9px !important;
+            font-weight: 300;
+            color: #fff;
+
+            outline: none;
+
+            width: 100%;
+            &::placeholder {
+              color: #fff;
+            }
+          }
+          ::placeholder {
+            color: #fff;
+          }
+          .file-para {
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 300;
+            display: block;
+            padding-top: 12px;
+            color: #fff;
+          }
+        }
+      }
+    }
+    .main-hd {
+      margin: 33px 0 12px !important;
+      font-size: 19px !important;
+      font-weight: 600;
+      line-height: 22.8px;
+    }
+    .about {
+      margin: 20px 0 35px;
+      width: 100%;
+      .area {
+        height: 100px;
+        width: 100%;
+        font-size: 18px !important;
+        line-height: 27px;
+        border: none !important;
+        background-color: transparent;
+        border-bottom: 1px solid #8c8c8c !important;
+        padding-bottom: 9px !important;
+        font-weight: 300;
+        color: #fff;
+        outline: none;
+      }
+    }
+    .btn-form {
+      font-size: 18px;
+      width: 83px !important;
+      color: #f9d633;
+      text-align: left;
+      border: none;
+      background-color: transparent;
+      border-bottom: 4px solid #f9d633 !important;
+      padding: 0 15px 7px 0px !important;
+      font-weight: normal !important;
+      line-height: 27px;
+    }
+  }
+}

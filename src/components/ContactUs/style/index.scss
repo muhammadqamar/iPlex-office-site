@@ -1,0 +1,17 @@
+.main-contact {
+  width: 100%;
+  background: linear-gradient(90deg, #000 50%, #fff 50%);
+
+  @media (max-width: 767px) {
+    background: linear-gradient(180deg, #000 50%, #fff 50%);
+  }
+
+  .index-section {
+    display: flex;
+    max-width: 1440px;
+    margin: auto;
+    @media (max-width: 767px) {
+      flex-wrap: wrap;
+    }
+  }
+}

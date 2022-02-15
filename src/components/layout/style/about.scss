@@ -3,13 +3,24 @@
   width: 100vw;
   height: 100vh;
   position: fixed;
+  z-index: 1;
+  transition: all ease-in-out 0.4s;
 
   .about-informactiion {
     max-width: 1440px;
     padding: 140px 230px 100px;
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+
+    @media (max-width: 1024px) {
+      padding: 140px 30px 100px;
+    }
+    @media (max-width: 767px) {
+      padding: 90px 30px 10px;
+      flex-direction: column;
+    }
 
     .pages-name {
       width: 271.75px;
@@ -21,6 +32,11 @@
         line-height: 59.4px;
         margin-bottom: 35px;
         color: #fff;
+        @media (max-width: 767px) {
+          font-size: 35px;
+          margin-bottom: 15px;
+          line-height: 40.1px;
+        }
 
         cursor: pointer;
         &:hover {
@@ -38,6 +54,10 @@
         font-weight: 500;
         line-height: 39.9px;
         color: #fff;
+
+        @media (max-width: 767px) {
+          font-size: 18px;
+        }
       }
       .hon-li {
         cursor: pointer;
@@ -53,10 +73,34 @@
         font-weight: 500;
         line-height: 39.9px;
         color: #fff;
+        @media (max-width: 767px) {
+          font-size: 18px;
+        }
 
         &:hover {
           color: #f9d633;
         }
+      }
+    }
+
+    .contact-btn {
+      text-align: left;
+      width: 12%;
+      min-width: 182px;
+      text-decoration: none;
+      display: none;
+      @media (max-width: 600px) {
+        display: block;
+        margin-top: 20px;
+      }
+
+      .link-btn {
+        color: #f9d633;
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: normal;
+        border-bottom: 4px solid #f9d633;
+        text-decoration: none;
       }
     }
   }

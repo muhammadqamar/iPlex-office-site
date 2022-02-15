@@ -1,0 +1,59 @@
+.info-hero-section {
+  max-width: 393px;
+  padding: 130px 45px 0;
+  background: #fff;
+  @media (max-width: 768px) and (min-width: 501px) {
+    padding: 115px 30px 0;
+  }
+  @media (max-width: 500px) {
+    padding: 60px 25px 0;
+  }
+  .main-sections {
+    .bx-ipex {
+      margin-bottom: 40px;
+      .bx-hd {
+        font-size: 20px;
+        color: #000;
+        font-weight: normal;
+        line-height: 26px;
+        margin-bottom: 10px;
+      }
+      .bx-para {
+        color: #000;
+        font-weight: 500;
+        line-height: 30.6px;
+        font-size: 18px;
+      }
+      .bx-tag {
+        text-decoration: none;
+        color: #000;
+        font-weight: 500;
+        line-height: 30.6px;
+        font-size: 18px;
+        &:hover {
+          color: rgb(249, 214, 51);
+        }
+      }
+    }
+  }
+  .social-iplex {
+    margin-bottom: 40px;
+    .social-list {
+      .list {
+        text-transform: uppercase;
+        margin-bottom: 5px;
+        color: #000;
+        font-weight: 500;
+        line-height: 30.6px;
+        list-style-type: none;
+        .list-tag {
+          text-decoration: none;
+          color: rgb(0, 0, 0);
+          &:hover {
+            color: rgb(249, 214, 51);
+          }
+        }
+      }
+    }
+  }
+}

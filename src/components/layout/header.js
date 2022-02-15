@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
-import { Navbar, Nav } from "react-bootstrap"
+import { Navbar } from "react-bootstrap"
 import AboutPage from "../layout/about"
 import IplexLogo from "../../assets/images/iPlax-logo.svg"
 
@@ -67,7 +67,7 @@ const Header = () => {
             <span className="toggler-icon bottom-bar"></span>
           </button>
           <Link to="/" className="contact-btn">
-            <div className=" link-btn">Hi, can we talk?</div>
+            <h4 className=" link-btn">Hi, can we talk?</h4>
           </Link>
         </div>
       </Navbar>

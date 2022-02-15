@@ -1,14 +1,18 @@
 import React from "react"
 import { Link } from "gatsby"
-import "./about.scss"
+import "./style/about.scss"
 
 const About = () => {
   return (
     <div className="main-about">
       <div className="about-informactiion">
         <div className="pages-name">
-          <h1 className="page-name-1">TEAM</h1>
-          <h1 className="page-name-1">CONTACT</h1>
+          <Link style={{ textDecoration: "none" }} to="/team">
+            <h1 className="page-name-1">TEAM</h1>
+          </Link>
+          <Link style={{ textDecoration: "none" }} to="/contact-us">
+            <h1 className="page-name-1">CONTACT</h1>
+          </Link>
         </div>
         <div className="addres">
           <h4 className="addres-name">
@@ -28,6 +32,9 @@ const About = () => {
             <h4 className="lnks">LINKEDIN</h4>
           </Link>
         </div>
+        <Link to="/" className="contact-btn">
+          <h4 className=" link-btn">Hi, can we talk?</h4>
+        </Link>
       </div>
     </div>
   )
