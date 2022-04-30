@@ -1,4 +1,5 @@
 ---
+templateKey: opportunities
 title: "Your Opportunities "
 heading: Want to know immediately where your opportunities lie?
 description: In the intake we tell you all the ins and outs of our approach,

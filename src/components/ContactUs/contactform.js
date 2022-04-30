@@ -1,5 +1,5 @@
 import React from "react"
-import { Formik, Field } from "formik"
+import { Formik } from "formik"
 import "./style/form.scss"
 
 const Contactform = () => {
@@ -65,7 +65,7 @@ const Contactform = () => {
                         value={values.name}
                       />
                       <p className="error">
-                        {errors.email && touched.email && errors.email}
+                        {errors.name && touched.name && errors.name}
                       </p>
                     </div>
                     <label className="main-hd" for="Myemail">

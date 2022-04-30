@@ -1,4 +1,5 @@
 ---
+templateKey: digitalfuture
 heading: Let’s talk about your digital future
 title: Digital Future
 headingone: Let’s talk about your digital future
@@ -18,7 +19,8 @@ intro cards:
         how the field is developing.
       cardnumber: 1
     - cardheading: Backend Developer
-      carddescription: The objective of designing a site is to ensure that when the
+      carddescription:
+        The objective of designing a site is to ensure that when the
         users open up the site they see the information in a format that is easy
         to read and relevant. This is further complicated by the fact that users
         now use a large variety of devices with varying screen sizes and
@@ -29,7 +31,8 @@ intro cards:
         which requires careful planning on the side of the developer.
       cardnumber: 2
     - cardheading: Native from Web Tech
-      carddescription: Eventually, what is learned from web browser development can be
+      carddescription:
+        Eventually, what is learned from web browser development can be
         used by front-end developers to craft code for environments that are not
         fueled by a browser engine. As of late, development environments are
         being dreamed up that use web technologies (e.g., CSS and JavaScript),

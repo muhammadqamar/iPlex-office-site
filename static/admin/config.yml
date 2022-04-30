@@ -7,6 +7,120 @@ media_folder: static/img
 public_folder: /img
 
 collections:
+  - name: "topheader"
+    label: "Top Header"
+    files:
+      - file: "markdown/header/header.md"
+        label: "Top Header"
+        name: "topheader"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "top-header",
+            }
+          - { label: title, name: title, widget: string }
+          - { label: Heading, name: heading, widget: text }
+          - { label: Description, name: description, widget: markdown }
+          - {
+              label: Header Link,
+              name: headerlink,
+              widget: object,
+              fields:
+                [
+                  { label: link name, name: linkname, widget: string },
+
+                  { label: link, name: link, widget: string },
+                ],
+            }
+  - name: "digitalfuture"
+    label: "Digital Future"
+    files:
+      - file: "markdown/digital/digital.md"
+        label: "Digital Future"
+        name: "digitalfuture"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "digitalfuture",
+            }
+          - { label: title, name: title, widget: string }
+          - { label: Heading One, name: headingone, widget: text }
+          - { label: Descriptions, name: descriptions, widget: text }
+          - { label: Heading Two, name: headingtwo, widget: text }
+          - {
+              label: Digital Link,
+              name: digitallink,
+              widget: object,
+              fields:
+                [
+                  { label: link name, name: linkname, widget: string },
+
+                  { label: link, name: link, widget: string },
+                ],
+            }
+          - {
+              label: Intro Cards,
+              name: intro cards,
+              widget: object,
+              fields:
+                [
+                  {
+                    label: Cards,
+                    name: Cards,
+                    widget: list,
+                    fields:
+                      [
+                        {
+                          label: Card heading,
+                          name: cardheading,
+                          widget: string,
+                        },
+                        {
+                          label: Card Description,
+                          name: carddescription,
+                          widget: text,
+                        },
+                        {
+                          label: Card Number,
+                          name: cardnumber,
+                          widget: number,
+                        },
+                      ],
+                  },
+                ],
+            }
+  - name: "youropportunities"
+    label: "Your Opportunities"
+    files:
+      - file: "markdown/opportunities/opportunities.md"
+        label: "Opportunities"
+        name: "opportunities"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "opportunities",
+            }
+          - { label: title, name: title, widget: string }
+          - { label: Heading, name: heading, widget: text }
+          - { label: Description, name: description, widget: text }
+          - {
+              label: Opportunities Link,
+              name: opportunitieslink,
+              widget: object,
+              fields:
+                [
+                  { label: link name, name: linkname, widget: string },
+
+                  { label: link, name: link, widget: string },
+                ],
+            }
+
   # - name: "alllogos"
   #   label: "All Logos"
   #   files:
@@ -46,6 +160,22 @@ collections:
   #                   widget: list,
   #                   fields: [{ label: Image, name: image, widget: image }],
   #                 },
+  #                 {
+  #                   label: logo,
+  #                   name: logo,
+  #                   widget: list,
+  #                   fields: [{ label: Image, name: image, widget: image }],
+  #                 },
+  #                 { label: "Code", name: "code", widget: "code" },
+  #                 {
+  #                   label: "Draft",
+  #                   name: "draft",
+  #                   widget: "boolean",
+  #                   default: true,
+  #                 },
+  #                 { label: "Color", name: "color", widget: "color" },
+  #                 { name: "summary", label: "Summary", widget: "string" },
+  #                 { name: "details", label: "Details", widget: "markdown" },
   #               ],
   #           }
   #     - file: "markdown/logos/bottomlogo.md"
@@ -446,7 +576,7 @@ collections:
     label: "privacypolicy"
     files:
       - file: "markdown/privacypolicy/privacypolicy.md"
-        label: "privacy policy"
+        label: "privacy"
         name: "privacypolicy"
         fields:
           - {
