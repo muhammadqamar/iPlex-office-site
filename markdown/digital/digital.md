@@ -38,6 +38,36 @@ intro cards:
         being dreamed up that use web technologies (e.g., CSS and JavaScript),
         without web engines, to create native applications.
       cardnumber: 3
+    - cardheading: Library One
+      carddescription: The objective of designing a site is to ensure that when the
+        users open up the site they see the information in a format that is easy
+        to read and relevant. This is further complicated by the fact that users
+        now use a large variety of devices with varying screen sizes and
+        resolutions thus forcing the designer to take into consideration these
+        aspects when designing the site. They need to ensure that their site
+        comes up correctly in different browsers (cross-browser), different
+        operating systems (cross-platform) .
+      cardnumber: 4
+    - cardheading: Library Two
+      carddescription: The objective of designing a site is to ensure that when the
+        users open up the site they see the information in a format that is easy
+        to read and relevant. This is further complicated by the fact that users
+        now use a large variety of devices with varying screen sizes and
+        resolutions thus forcing the designer to take into consideration these
+        aspects when designing the site. They need to ensure that their site
+        comes up correctly in different browsers (cross-browser), different
+        operating systems (cross-platform) .
+      cardnumber: 5
+    - cardheading: Library 3
+      carddescription: The objective of designing a site is to ensure that when the
+        users open up the site they see the information in a format that is easy
+        to read and relevant. This is further complicated by the fact that users
+        now use a large variety of devices with varying screen sizes and
+        resolutions thus forcing the designer to take into consideration these
+        aspects when designing the site. They need to ensure that their site
+        comes up correctly in different browsers (cross-browser), different
+        operating systems (cross-platform) .
+      cardnumber: 6
 heading1: Feed designs and builds ambitious digital products and brands
 digitallink:
   link: https://iplex.co/services/
