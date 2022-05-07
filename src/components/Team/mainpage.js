@@ -1,26 +1,25 @@
 import React from "react"
 import "./style/mainpage.scss"
 import Card from "./card"
-import Opportunities from "../Home/opportunities"
+import Opportunities from "./opportunities"
 
-const Mainpage = () => {
+const Mainpage = ({ data, cards }) => {
+  console.log("dataCards is", data)
   return (
     <>
       <div className="hero-section-page">
         <div className="bg-section-page">
           <h1 className="hero-hd">
-            The Creative <span className="main-word"> Crew</span> Behind iPlex
+            {cards?.frontmatter?.heading.slice(0, 40)}
           </h1>
           <div className="cards">
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
+            {cards?.frontmatter.team_cards?.Cards.map(items => (
+              <Card key={items} />
+            ))}
           </div>
-          <Opportunities />
+          <div className="all-sections">
+            <Opportunities data={data} />
+          </div>
         </div>
       </div>
     </>

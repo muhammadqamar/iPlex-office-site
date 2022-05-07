@@ -6,8 +6,8 @@ const DiscoverCard = ({ data }) => {
       <div className="card-detail">
         <h1 className="card-hd">{data.cardheading}</h1>
         <p className="card-para">
-          {data.carddescription.length !== 226
-            ? `${data.carddescription.slice(0, 225)}...`
+          {data.carddescription.length !== 223
+            ? `${data.carddescription.slice(0, 222)}...`
             : data.carddescription}
         </p>
       </div>

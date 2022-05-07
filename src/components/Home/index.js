@@ -59,10 +59,6 @@ const Index = () => {
     data => data.frontmatter.templateKey === "opportunities"
   )?.[0]
 
-  const privacyPolicy = nodes.filter(
-    data => data.frontmatter.templateKey === "opportunities"
-  )?.[0]
-
   const digitalProduct = nodes.filter(
     data => data.frontmatter.templateKey === "digitalfuture"
   )?.[0]
