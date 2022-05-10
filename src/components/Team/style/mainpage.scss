@@ -22,6 +22,18 @@
         line-height: 43.2px;
         padding-left: 15px;
       }
+      .hd-color {
+        background-color: #f9d633;
+        color: #000;
+        padding: 5px 10px;
+        line-height: 1.35;
+        font-size: 35px;
+        @media (max-width: 768px) {
+          font-size: 28px;
+          padding: 5px;
+        }
+      }
+    }
       .main-word {
         font-size: 45px;
         font-weight: bold;
@@ -42,4 +54,3 @@
       flex-wrap: wrap;
     }
   }
-}
