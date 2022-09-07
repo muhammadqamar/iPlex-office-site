@@ -2,6 +2,7 @@ import React from "react"
 import "./style/index.scss"
 import Mainpage from "./mainpage"
 import { useStaticQuery, graphql } from "gatsby"
+import Card from "./card"
 
 const Index = () => {
   const teamData = useStaticQuery(graphql`
@@ -9,16 +10,18 @@ const Index = () => {
       allMarkdownRemark {
         nodes {
           frontmatter {
+            templateKey
             opportunitieslink {
               link
               linkname
             }
-            heading
+            title
+            teamheading
             team_cards {
               Cards {
+                cardimage
                 cardheading
                 carddescription
-                teamsImges
               }
             }
           }
@@ -35,13 +38,13 @@ const Index = () => {
   )?.[0]
   console.log("oppertu data", opportunities)
   const team_cards = nodes.filter(
-    data => data.frontmatter.templateKey === "myteam"
+    data => data.frontmatter.templateKey === "myteamnew"
   )?.[0]
-  console.log("cards data", team_cards)
+  console.log("cards data koi b", team_cards)
 
   return (
     <div>
-      <Mainpage data={opportunities} />
+      <Mainpage data={opportunities} tdata={team_cards} />
     </div>
   )
 }

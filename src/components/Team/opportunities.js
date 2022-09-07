@@ -7,7 +7,7 @@ const Opportunities = ({ data }) => {
       <div className="main-oppertunities">
         <div className="oppertunities-container">
           <h1 className="oppertunities-hd">
-            {data?.frontmatter.heading.slice(0, 50)}
+            {/* {data?.frontmatter.heading.slice(0, 50)} */}
             <span className="hd-color">opportunities</span> lie?
           </h1>
           <p className="opportunities-para">{data?.frontmatter.description}</p>
@@ -16,7 +16,7 @@ const Opportunities = ({ data }) => {
               className="opportunities-link"
               href="https://iplex.co/contact-us/"
             >
-              {data?.frontmatter.opportunitieslink.linkname}
+              {/* {data?.frontmatter.opportunitieslink.linkname} */}
             </a>
           </p>
         </div>
