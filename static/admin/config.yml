@@ -232,20 +232,14 @@ collections:
                   },
                 ],
             }
-          
-          - {
-              label: Phone Link,
-              name: phonelink,
-              widget: object,
-              fields:
 
-              - { label: Phone Heading, name: phoneheading, widget: text }
+          - { label: Phone Link, name: phonelink, widget: object, fields:
+                # - { label: Phone Heading, name: phoneheading, widget: text }
                 [
                   { label: link name, name: linkname, widget: string },
 
                   { label: link, name: link, widget: string },
-                ],
-            }
+                ] }
           - {
               label: FaceBook Link,
               name: facebooklink,

@@ -2,7 +2,7 @@
   width: 100%;
   background: linear-gradient(90deg, #000 50%, #fff 50%);
 
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     background: linear-gradient(180deg, #000 50%, #fff 50%);
   }
 
@@ -10,7 +10,7 @@
     display: flex;
     max-width: 1440px;
     margin: auto;
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       flex-wrap: wrap;
     }
   }

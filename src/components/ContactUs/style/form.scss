@@ -24,16 +24,17 @@
     .form-box {
       display: flex;
       justify-content: space-between;
+      // align-items: center;
       @media (max-width: 768px) {
         flex-wrap: wrap;
       }
       .form-bx1 {
         width: 400px;
         overflow: auto;
-        @media (max-width: 1260px) and (min-width: 779px) {
+        @media (min-width: 768px) and (max-width: 1260px) {
           width: 300px;
           margin-right: 25px;
-          padding-top: 22px;
+          padding-top: 45px;
         }
         @media (max-width: 768px) {
           width: 100%;
@@ -74,8 +75,9 @@
       .form-bx2 {
         width: 400px;
         overflow: auto;
-        @media (max-width: 1220px) and (min-width: 779px) {
+        @media (min-width: 768px) and (max-width: 1260px) {
           width: 300px;
+          padding-top: 28px;
         }
         @media (max-width: 768px) {
           width: 100%;
