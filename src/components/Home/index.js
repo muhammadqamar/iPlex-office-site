@@ -8,35 +8,42 @@ import { useStaticQuery, graphql } from "gatsby"
 
 const Index = () => {
   const digitalData = useStaticQuery(graphql`
-    query digiData {
+    query MyQuery {
       allMarkdownRemark {
         nodes {
           frontmatter {
             templateKey
-            description
-            headingone
-            headingtwo
-            intro_cards {
-              Cards {
-                carddescription
-                cardheading
-                cardnumber
+            hero {
+              heading
+              description
+              headerLink {
+                linkName
+                linkUrl
               }
             }
-            opportunitieslink {
-              link
-              linkname
+            digitalFuture {
+              headingone
+              headingtwo
+              descriptions
+              digitallink {
+                link
+                linkname
+                introCards {
+                  cards {
+                    cardDescription
+                    cardNumber
+                    cardheading
+                  }
+                }
+              }
             }
-            headerlink {
-              link
-              linkname
-            }
-            heading
-            descriptions
-            heading1
-            digitallink {
-              link
-              linkname
+            youropportunities {
+              heading
+              description
+              opportunitiesLink {
+                link
+                linkName
+              }
             }
           }
         }
@@ -48,33 +55,20 @@ const Index = () => {
   } = digitalData
 
   const digital = nodes.filter(
-    data => data.frontmatter.templateKey === "digitalfuture"
+    data => data.frontmatter.templateKey === "home"
   )?.[0]
-  console.log("digital data oppor", digital)
-  const headingData = nodes.filter(
-    data => data.frontmatter.templateKey === "top-header"
-  )?.[0]
-
-  const opportunities = nodes.filter(
-    data => data.frontmatter.templateKey === "opportunities"
-  )?.[0]
-
-  const digitalProduct = nodes.filter(
-    data => data.frontmatter.templateKey === "digitalfuture"
-  )?.[0]
-  console.log("data oppor", digitalProduct)
-
+  console.log("home templateKey", digital)
   return (
     <>
       <div className="top-home-hero-section">
-        <Herosection data={headingData} />
+        <Herosection data={digital} />
       </div>
 
       <div className="main-home-page">
         <div className="all-sections">
           <Digitalfuture data={digital} />
-          <Digitalproduct data={digitalProduct} />
-          <Opportunities data={opportunities} />
+          <Digitalproduct data={digital} />
+          <Opportunities data={digital} />
         </div>
       </div>
     </>

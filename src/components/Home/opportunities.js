@@ -7,16 +7,21 @@ const Opportunities = ({ data }) => {
       <div className="main-opportunities">
         <div className="opportunities-container">
           <h1 className="oppertunities-hd">
-            {data?.frontmatter.heading.slice(0, 36)}
-            <span className="hd-color">opportunities</span> lie?
+            {data?.frontmatter.youropportunities.heading.slice(0, 36)}
+            <span className="hd-color">
+              {data?.frontmatter.youropportunities.heading.slice(36, 49)}
+            </span>
+            {data?.frontmatter.youropportunities.heading.slice(49)}
           </h1>
-          <p className="oppertunities-para">{data?.frontmatter.description}</p>
+          <p className="oppertunities-para">
+            {data?.frontmatter.youropportunities.description}
+          </p>
           <p className="link-para">
             <a
               className="oppertunities-link"
-              href="https://iplex.co/contact-us/"
+              href={data?.frontmatter.youropportunities.opportunitiesLink.link}
             >
-              {data?.frontmatter.opportunitieslink.linkname}
+              {data?.frontmatter.youropportunities.opportunitiesLink.linkName}
             </a>
           </p>
         </div>
