@@ -21,7 +21,7 @@ collections:
               - name: templateKey
                 label: Template Key
                 widget: hidden
-                default: hero
+                default: home
               - name: heading
                 label: Heading
               - name: description
@@ -42,7 +42,7 @@ collections:
               - name: templateKey
                 label: Template Key
                 widget: hidden
-                default: digital-Future
+                default: home
               - name: headingone
                 label: Heading One
               - name: descriptions
@@ -80,7 +80,7 @@ collections:
               - name: templateKey
                 label: Template Key
                 widget: hidden
-                default: opportunities
+                default: home
               - name: heading
                 label: Heading
               - name: description
