@@ -1,41 +1,18 @@
 import React from "react"
 import "./style/card.scss"
-import pic from "../../assets/images/au-4.jpg"
-import { useStaticQuery, graphql } from "gatsby"
 
-const Card = () => {
-  const teamData = useStaticQuery(graphql`
-    query fateeData {
-      allMarkdownRemark {
-        nodes {
-          frontmatter {
-            title
-            teamheading
-            team_cards {
-              Cards {
-                cardheading
-                carddescription
-                cardimage
-              }
-            }
-          }
-        }
-      }
-    }
-  `)
-  const {
-    allMarkdownRemark: { nodes },
-  } = teamData
-  console.log("team data is here", teamData)
+const Card = ({ item }) => {
+  console.log("item is the items", item)
+
   return (
     <>
       <div className="team-card">
         <div className="img-bx">
-          <img className="img-person" src={pic}></img>
+          <img className="img-person" src={item.cardimage} />
         </div>
         <div className="person-detail">
-          <h1 className="person-hd">Haris Siddiqui</h1>
-          <p className="person-pst">Creative Department</p>
+          <h1 className="person-hd">{item.cardheading}</h1>
+          <p className="person-pst">{item.carddescription}</p>
         </div>
       </div>
     </>

@@ -3,21 +3,22 @@ import "./style/mainpage.scss"
 import Card from "./card"
 import Opportunities from "./opportunities"
 
-const Mainpage = ({ data, cards }) => {
-  console.log("dataCards is", data)
+const Mainpage = ({ data, datacard }) => {
+  console.log("data opportunities", data)
+  console.log("datacard is here they", datacard)
 
   return (
     <>
       <div className="hero-section-page">
         <div className="bg-section-page">
-          {/* <h1 className="hero-hd">
-            {cards?.frontmatter?.heading.slice(0, 40)}
+          <h1 className="hero-hd">
+            {datacard?.frontmatter?.teamheading.slice(0, 40)}
           </h1>
           <div className="cards">
-            {cards?.frontmatter.team_cards?.Cards.map(items => (
-              <Card key={items} />
+            {datacard?.frontmatter.team_cards?.Cards.map(items => (
+              <Card key={items} item={items} />
             ))}
-          </div> */}
+          </div>
           <div className="all-sections">
             <Opportunities data={data} />
           </div>

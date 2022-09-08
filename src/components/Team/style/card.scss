@@ -1,10 +1,23 @@
 .team-card {
+  max-width: 307px;
+  padding: 0 0 30px;
+  background: #666666;
+  box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.5);
   margin-bottom: 40px;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0 0 0 1px rgb(53 72 91 / 4%), 0 2px 2px rgb(0 0 0 / 0%),
+      0 4px 4px rgb(0 0 0 / 1%), 0 10px 8px rgb(0 0 0 / 2%),
+      0 15px 15px rgb(0 0 0 / 2%), 0 30px 30px rgb(0 0 0 / 2%),
+      0 70px 65px rgb(0 0 0 / 3%);
+    opacity: 0.8;
+    transition: all 0.4s ease-in-out;
+  }
   .img-bx {
-    padding: 0px 15px;
     margin-bottom: 15px;
     .img-person {
-      max-width: 307px;
+      width: 100%;
+      object-fit: cover;
       height: 342px;
     }
   }

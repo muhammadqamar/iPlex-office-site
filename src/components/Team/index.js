@@ -37,14 +37,14 @@ const Index = () => {
     data => data.frontmatter.templateKey === "opportunities"
   )?.[0]
   console.log("oppertu data", opportunities)
-  const team_cards = nodes.filter(
+  const teamcards = nodes.filter(
     data => data.frontmatter.templateKey === "myteamnew"
   )?.[0]
-  console.log("cards data koi b", team_cards)
+  console.log("cards data koi b", teamcards)
 
   return (
     <div>
-      <Mainpage data={opportunities} tdata={team_cards} />
+      <Mainpage data={opportunities} datacard={teamcards} />
     </div>
   )
 }
