@@ -1,4 +1,5 @@
 ---
+templateKey: privacy-policy
 title: Download music freely
 heading: "iPlex    About page  "
 description: >-

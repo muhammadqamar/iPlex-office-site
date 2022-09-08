@@ -3,7 +3,6 @@ import Header from "./header"
 import Footer from "./footer"
 import "./layout.scss"
 import "../../assets/font/stylesheet.scss"
-
 const Index = ({ children }) => {
   return (
     <>

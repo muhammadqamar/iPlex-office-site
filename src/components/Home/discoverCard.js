@@ -1,17 +1,19 @@
 import React from "react"
 import "./style/digitalproduct.scss"
-const DiscoverCard = () => {
+const DiscoverCard = ({ data }) => {
   return (
     <div className="card1">
       <div className="card-detail">
-        <h1 className="card-hd">Discovery</h1>
+        <h1 className="card-hd">{data.cardheading}</h1>
         <p className="card-para">
-          The first people you'll meet are our experts in business,Ux and
-          technology. They dig into your business, discuss the scope of the
-          challenge and consult on the most suitable technological solutions.
+          {data.carddescription.length !== 223
+            ? `${data.carddescription.slice(0, 222)}...`
+            : data.carddescription}
         </p>
       </div>
-      <div className="card-number">01</div>
+      <div className="card-number">
+        {data.cardnumber < 10 ? `0${data.cardnumber}` : data.cardnumber}
+      </div>
     </div>
   )
 }
