@@ -57,13 +57,11 @@ const Index = () => {
   const digital = nodes.filter(
     data => data.frontmatter.templateKey === "home"
   )?.[0]
-  console.log("home templateKey", digital)
   return (
     <>
       <div className="top-home-hero-section">
         <Herosection data={digital} />
       </div>
-
       <div className="main-home-page">
         <div className="all-sections">
           <Digitalfuture data={digital} />

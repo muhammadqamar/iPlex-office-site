@@ -6,19 +6,14 @@ import Card from "./card"
 
 const Index = () => {
   // const teamData = useStaticQuery(graphql`
-  //   query tData {
+  //   query MyQuery {
   //     allMarkdownRemark {
   //       nodes {
   //         frontmatter {
   //           templateKey
-  //           opportunitieslink {
-  //             link
-  //             linkname
-  //           }
-  //           title
   //           teamheading
   //           team_cards {
-  //             Cards {
+  //             cards {
   //               cardimage
   //               cardheading
   //               carddescription
@@ -32,15 +27,10 @@ const Index = () => {
   // const {
   //   allMarkdownRemark: { nodes },
   // } = teamData
-
-  // const opportunities = nodes.filter(
-  //   data => data.frontmatter.templateKey === "opportunities"
-  // )?.[0]
-  // console.log("oppertu data", opportunities)
   // const teamcards = nodes.filter(
-  //   data => data.frontmatter.templateKey === "myteamnew"
+  //   data => data.frontmatter.templateKey === "teamdata"
   // )?.[0]
-  // console.log("cards data koi b", teamcards)
+  // console.log("teams cards data", teamcards)
 
   return (
     <div>{/* <Mainpage data={opportunities} datacard={teamcards} /> */}</div>
