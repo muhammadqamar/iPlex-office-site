@@ -2,8 +2,6 @@ import React from "react"
 import "./style/card.scss"
 
 const Card = ({ item }) => {
-  console.log("item is the items", item)
-
   return (
     <>
       <div className="team-card">

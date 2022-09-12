@@ -3,7 +3,7 @@ import "./style/index.scss"
 import Herosection from "./herosection"
 import Digitalfuture from "./digitalfuture"
 import Digitalproduct from "./digitalproduct"
-import Opportunities from "./opportunities"
+import Opportunities from "../Common/opportunities"
 import { useStaticQuery, graphql } from "gatsby"
 
 const Index = () => {
@@ -37,14 +37,6 @@ const Index = () => {
                 }
               }
             }
-            youropportunities {
-              heading
-              description
-              opportunitiesLink {
-                link
-                linkName
-              }
-            }
           }
         }
       }
@@ -66,7 +58,7 @@ const Index = () => {
         <div className="all-sections">
           <Digitalfuture data={digital} />
           <Digitalproduct data={digital} />
-          <Opportunities data={digital} />
+          <Opportunities />
         </div>
       </div>
     </>
