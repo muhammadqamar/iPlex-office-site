@@ -1,9 +1,7 @@
 .team-card {
-  max-width: 307px;
-  padding: 0 0 30px;
+  width: 407px;
   background: #666666;
   box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.5);
-  margin-bottom: 40px;
   cursor: pointer;
   &:hover {
     box-shadow: 0 0 0 1px rgb(53 72 91 / 4%), 0 2px 2px rgb(0 0 0 / 0%),
@@ -14,7 +12,6 @@
     transition: all 0.4s ease-in-out;
   }
   .img-bx {
-    margin-bottom: 15px;
     .img-person {
       width: 100%;
       object-fit: cover;
@@ -22,8 +19,10 @@
     }
   }
   .person-detail {
-    width: 307px;
+    width: 100%;
     text-align: center;
+    padding: 30px 16px;
+    // padding: ;
     .person-hd {
       font-size: 25px;
       margin-bottom: 10px;
