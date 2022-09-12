@@ -1,70 +1,67 @@
 import React from "react"
 import "./style/index.scss"
 import Oppertunities from "../Common/opportunities"
-
-const servicesData = [
-  {
-    title: "React",
-    heading: "React Development",
-    para: "We create large web applications that can change data, without reloading the page. The main purpose of React is to be fast, scalable, and simple. It works only on user interfaces in the application.",
-  },
-  {
-    title: "Wordpress",
-    heading: "Wordpress Development",
-    para: "We create large web applications that can change data, without reloading the page. The main purpose of React is to be fast, scalable, and simple. It works only on user interfaces in the application.",
-  },
-  {
-    title: "Angular",
-    heading: "Angular Development",
-    para: "We create large web applications that can change data, without reloading the page. The main purpose of React is to be fast, scalable, and simple. It works only on user interfaces in the application.",
-  },
-  {
-    title: "Node.js",
-    heading: "Node.js Development",
-    para: "We create large web applications that can change data, without reloading the page. The main purpose of React is to be fast, scalable, and simple. It works only on user interfaces in the application.",
-  },
-  {
-    title: "PHP",
-    heading: "PHP Development",
-    para: "We create large web applications that can change data, without reloading the page. The main purpose of React is to be fast, scalable, and simple. It works only on user interfaces in the application.",
-  },
-  {
-    title: "UI/UX",
-    heading: "UI/UX Development",
-    para: "We create large web applications that can change data, without reloading the page. The main purpose of React is to be fast, scalable, and simple. It works only on user interfaces in the application.",
-  },
-]
+import { useStaticQuery, graphql } from "gatsby"
 
 const Index = () => {
+  const servicedata = useStaticQuery(graphql`
+    query serviceData {
+      allMarkdownRemark {
+        nodes {
+          frontmatter {
+            templateKey
+            servicesmainheading
+            servicesmainpara
+            services_cards {
+              cards {
+                cardtitle
+                cardheading
+                carddescription
+              }
+            }
+          }
+        }
+      }
+    }
+  `)
+  const {
+    allMarkdownRemark: { nodes },
+  } = servicedata
+  const sericecards = nodes.filter(
+    data => data.frontmatter.templateKey === "servicedata"
+  )?.[0]
+  console.log("services data is here", sericecards)
   return (
     <div className="main-services">
       <div className="services-container">
         <h1 className="services-hd">
-          Services that&nbsp;
-          <span className="hd-color">meet</span>
+          {sericecards?.frontmatter?.servicesmainheading.slice(0, 14)}
+          <span className="hd-color">
+            {sericecards?.frontmatter?.servicesmainheading.slice(14, 19)}
+          </span>
           <br />
-          &nbsp;your need
+          {sericecards?.frontmatter?.servicesmainheading.slice(19)}
         </h1>
         <p className="services-para">
-          Experience deep knowledge of your industry paired with service
-          specialization to bring you high quality digital services.
+          {sericecards?.frontmatter?.servicesmainpara}
         </p>
       </div>
       <div className="main_services_cards">
-        {servicesData.map((item, index) => (
+        {sericecards?.frontmatter?.services_cards.cards.map((item, index) => (
           <div
             key={index}
             className={
               (index === 1 && " service_card service_headingone") ||
               (index === 2 && " service_card service_headingtwo") ||
+              (index === 3 && " service_card service_headingthree") ||
               (index === 4 && " service_card service_headingfour") ||
               (index === 5 && " service_card service_headingfive") ||
               "service_card"
             }
           >
-            <span className="react">{item.title}</span>
-            <h5 className={"service_heading"}>{item.heading}</h5>
-            <p className="service_para">{item.para}</p>
+            <span className="react">{item.cardtitle}</span>
+            <h5 className={"service_heading"}>{item.cardheading}</h5>
+            <p className="service_para">{item.carddescription}</p>
           </div>
         ))}
       </div>

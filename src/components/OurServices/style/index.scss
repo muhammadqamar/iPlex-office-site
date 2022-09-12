@@ -1,6 +1,9 @@
 .main-services {
   padding: 150px 45px 80px;
   background-color: #f9f9f9;
+  @media (max-width: 1391px) {
+    padding: 150px 27px 80px;
+  }
   @media (max-width: 768px) {
     padding: 80px 9px 60px;
   }
@@ -57,29 +60,86 @@
     justify-content: center;
     gap: 24px;
     margin-bottom: 100px;
+    @media (max-width: 1490px) {
+      justify-content: flex-start;
+    }
+    @media (max-width: 1355px) {
+      justify-content: center;
+    }
+    @media (max-width: 767px) {
+      flex-direction: column;
+    }
+
     .service_headingone {
       top: 60px;
+      @media (max-width: 767px) {
+        top: 10px;
+      }
     }
     .service_headingtwo {
       top: 120px;
+      @media (max-width: 1002px) {
+        top: 50px;
+      }
+      @media (max-width: 767px) {
+        top: 20px;
+      }
+    }
+    .service_headingthree {
+      @media (max-width: 1002px) {
+        top: 90px;
+      }
+      @media (max-width: 767px) {
+        top: 20px;
+      }
     }
     .service_headingfour {
       top: 60px;
+      @media (max-width: 1002px) {
+        top: 90px;
+        @media (max-width: 767px) {
+          top: 20px;
+        }
+      }
     }
     .service_headingfive {
       top: 120px;
+      @media (max-width: 767px) {
+        top: 20px;
+      }
     }
     .service_card {
       background-color: #fff;
       height: 496px;
+      cursor: pointer;
       overflow: hidden;
       position: relative;
       transform: perspective(2500px) rotateY(0);
-      padding: 20px 25px 35px;
+      padding-left: 10px;
       &:hover {
         .react {
           color: #000;
         }
+      }
+      @media (max-width: 1440px) {
+        max-width: 434px;
+      }
+      @media (max-width: 1355px) {
+        max-width: 390px;
+      }
+      @media (max-width: 1272px) {
+        max-width: 330px;
+      }
+      @media (max-width: 1092px) {
+        max-width: 300px;
+      }
+      @media (max-width: 767px) {
+        max-width: 100%;
+        padding: 0 25px;
+        margin: 0 20px;
+      }
+      @media (max-width: 580px) {
+        margin: 0;
       }
       .service_heading {
         max-width: 212px;

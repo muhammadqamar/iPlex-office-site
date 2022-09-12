@@ -3,10 +3,10 @@ import Header from "./header"
 import Footer from "./footer"
 import "./layout.scss"
 import "../../assets/font/stylesheet.scss"
-const Index = ({ children }) => {
+const Index = ({ children, backgroundColor }) => {
   return (
     <>
-      <Header />
+      <Header backgroundColor={backgroundColor} />
       <main>{children}</main>
       <Footer />
     </>
