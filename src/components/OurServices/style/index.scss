@@ -162,7 +162,7 @@
         position: relative;
         font-size: 80px;
         line-height: 80px;
-        animation: mymove 5s infinite;
+        animation: mymove 4s infinite;
         -webkit-text-fill-color: rgba(0, 0, 0, 0);
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: 000;
@@ -172,10 +172,10 @@
         transition: all ease-in-out 0.5s;
         @keyframes mymove {
           from {
-            right: -500px;
+            right: -400px;
           }
           to {
-            right: 600px;
+            right: 430px;
           }
         }
       }
