@@ -52,11 +52,18 @@ const Index = () => {
       </div>
       <div className="main_services_cards">
         {servicesData.map((item, index) => (
-          <div key={index} className="service_card">
+          <div
+            key={index}
+            className={
+              (index === 1 && " service_card service_headingone") ||
+              (index === 2 && " service_card service_headingtwo") ||
+              (index === 4 && " service_card service_headingfour") ||
+              (index === 5 && " service_card service_headingfive") ||
+              "service_card"
+            }
+          >
             <span className="react">{item.title}</span>
-            <h5 className="service_heading service_headingtwo service_headingthree">
-              {item.heading}
-            </h5>
+            <h5 className={"service_heading"}>{item.heading}</h5>
             <p className="service_para">{item.para}</p>
           </div>
         ))}

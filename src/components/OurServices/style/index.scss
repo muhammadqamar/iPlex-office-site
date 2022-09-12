@@ -56,9 +56,22 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 24px;
+    margin-bottom: 100px;
+    .service_headingone {
+      top: 60px;
+    }
+    .service_headingtwo {
+      top: 120px;
+    }
+    .service_headingfour {
+      top: 60px;
+    }
+    .service_headingfive {
+      top: 120px;
+    }
     .service_card {
       background-color: #fff;
-      min-height: 496px;
+      height: 496px;
       overflow: hidden;
       position: relative;
       transform: perspective(2500px) rotateY(0);
@@ -76,6 +89,7 @@
         font-size: 32px;
         margin-bottom: 20px;
       }
+
       .service_para {
         max-width: 400px;
         font-size: 19px;

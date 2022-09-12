@@ -118,3 +118,29 @@ collections:
                     label: Card heading
                   - name: carddescription
                     label: Card Description
+      - label: "servicesPage"
+        name: "Services Page"
+        file: "markdown/page/servicespage.md"
+        fields:
+          - name: templateKey
+            label: Template Key
+            widget: hidden
+            default: "servicedata"
+          - name: servicesmainheading
+            label: Services Main Heading
+          - name: servicesmainpara
+            label: Services Main Para
+          - name: services cards
+            label: Services Card
+            widget: object
+            fields:
+              - name: cards
+                label: Cards
+                widget: list
+                fields:
+                  - name: cardtitle
+                    label: Card Title
+                  - name: cardheading
+                    label: Card heading
+                  - name: carddescription
+                    label: Card Description
