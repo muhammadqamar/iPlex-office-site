@@ -13,9 +13,9 @@ brandparagraph: " We do much more than simply deliver technology or provide
 brandimage: /img/1662554615124.jpeg
 subaboutheading: About Us
 subaboutparagraph: Since our inception in 2009, we are growing into an
-  organization that rivals any modern day software company.  Since our inception
-  in 2009, we are growing into an organization that rivals any modern day
-  software company.
+  organization that rivals any modern day software company.  Our credo is to
+  keep our communication with clients at an exceptional level, increasing our
+  productivity and fulfilling the needs of our clients.
 technologies:
   technologycards:
     - cardtitle: React Development
