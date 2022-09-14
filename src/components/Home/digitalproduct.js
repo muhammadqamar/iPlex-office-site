@@ -35,7 +35,6 @@ const Digitalproduct = ({ data }) => {
 
   return (
     <div>
-      <div className="digital-product"></div>
       <div className="main-card-box">
         <Slider {...settings}>
           {data.frontmatter.digitalFuture.digitallink.introCards.cards.map(

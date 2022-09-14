@@ -7,14 +7,17 @@ const About = () => {
     <div className="main-about">
       <div className="about-informactiion">
         <div className="pages-name">
+          <Link style={{ textDecoration: "none" }} to="/aboutus">
+            <h1 className="page-name-1">About</h1>
+          </Link>
+          <Link style={{ textDecoration: "none" }} to="/services">
+            <h1 className="page-name-1">Services</h1>
+          </Link>
           <Link style={{ textDecoration: "none" }} to="/team">
             <h1 className="page-name-1">Team</h1>
           </Link>
           <Link style={{ textDecoration: "none" }} to="/contact-us">
             <h1 className="page-name-1">Contact</h1>
-          </Link>
-          <Link style={{ textDecoration: "none" }} to="/services">
-            <h1 className="page-name-1">Services</h1>
           </Link>
         </div>
         <div className="addres">
