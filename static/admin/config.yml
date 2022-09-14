@@ -144,3 +144,49 @@ collections:
                     label: Card heading
                   - name: carddescription
                     label: Card Description
+      - label: "aboutPage"
+        name: "About Page"
+        file: "markdown/page/aboutpage.md"
+        fields:
+          - name: templateKey
+            label: Template Key
+            widget: hidden
+            default: "aboutdata"
+          - name: aboutmainheading
+            label: About Main Heading
+          - name: aboutImages
+            label: About Images
+            widget: list
+            fields:
+              - name: aboutusimage
+                label: About Us Image
+                widget: image
+          - name: brandheading
+            label: Brand Heading
+          - name: brandparagraph
+            label: Brand Paragraph
+          - name: brandimage
+            label: Brand Image
+            widget: image
+          - name: subaboutheading
+            label: Sub About Heading
+          - name: subaboutparagraph
+            label: Sub About Paragraph
+          - name: technologies
+            label: Technologies
+            widget: object
+            fields:
+              - name: templateKey
+                label: Template Key
+                widget: hidden
+                default: aboutdata
+              - name: maintechnologyheading
+                label: Main Technology Heading
+              - name: technologycards
+                label: Technology Cards
+                widget: list
+                fields:
+                  - name: cardtitle
+                    label: Card Title
+                  - name: carddescription
+                    label: Card Description
