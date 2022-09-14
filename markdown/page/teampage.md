@@ -5,7 +5,7 @@ team cards:
   cards:
     - cardheading: Faisal Mehmood
       carddescription: Senior FullStack Developer .
-      cardimage: /img/1662625227307.jpeg
+      cardimage: /img/screenshot_20220914-143958_1.png
     - cardheading: Aqib Nawaz
       carddescription: Senior Designing Developer .
       cardimage: /img/1660471374994.jpeg
