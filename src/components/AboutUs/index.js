@@ -1,6 +1,5 @@
 import React from "react"
 import "./style/index.scss"
-import aboutImg from "../../assets/images/group.jpg"
 import TechnologiesWork from "./technologiesWork"
 import { useStaticQuery, graphql } from "gatsby"
 
