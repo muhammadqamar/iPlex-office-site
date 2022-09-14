@@ -8,17 +8,25 @@ const Herosection = ({ data }) => {
       <div className="hero-ideas">
         <div className="main-idea">
           <div className="header-about">
-            <h1 className="hero-hd">{data.frontmatter.heading}</h1>
-            {/* <h1 className="hero-hd">
-              Where your ideas <span className="blod-text"> evolve </span>into
-              <span className="blod-text"> products.</span>
-            </h1> */}
-            <p className="hero-para">{data.frontmatter.description}</p>
+            <h1 className="hero-hd">
+              {data?.frontmatter.hero.heading.slice(0, 16)}
+              <strong style={{ fontWeight: "500" }}>
+                {data?.frontmatter.hero.heading.slice(16, 24)}
+              </strong>
+              {data?.frontmatter.hero.heading.slice(24, 29)}
+              <strong style={{ fontWeight: "500" }}>
+                {data?.frontmatter.hero.heading.slice(29)}
+              </strong>
+            </h1>
+            <p className="hero-para">{data?.frontmatter.hero.description}</p>
           </div>
           <div className="main-logo-section">
             <div className="tag-section">
-              <a className="link-tag" href="https://iplex.co/team/">
-                {data.frontmatter.headerlink.linkname}
+              <a
+                className="link-tag"
+                href={data?.frontmatter.hero.headerLink.linkUrl}
+              >
+                {data?.frontmatter.hero.headerLink.linkName}
               </a>
             </div>
           </div>

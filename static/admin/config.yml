@@ -7,269 +7,186 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: "topheader"
-    label: "Top Header"
+  - name: "pages"
+    label: "Pages"
     files:
-      - file: "markdown/header/header.md"
-        label: "Top Header"
-        name: "topheader"
+      - label: "homepage"
+        name: "HomePage"
+        file: "markdown/page/homepage.md"
         fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "top-header",
-            }
-          - { label: title, name: title, widget: string }
-          - { label: Heading, name: heading, widget: text }
-          - { label: Description, name: description, widget: markdown }
-          - {
-              label: Header Link,
-              name: headerlink,
-              widget: object,
-              fields:
-                [
-                  { label: link name, name: linkname, widget: string },
-
-                  { label: link, name: link, widget: string },
-                ],
-            }
-  - name: "digitalfuture"
-    label: "Digital Future"
-    files:
-      - file: "markdown/digital/digital.md"
-        label: "Digital Future"
-        name: "digitalfuture"
-        fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "digitalfuture",
-            }
-          - { label: title, name: title, widget: string }
-          - { label: Heading One, name: headingone, widget: text }
-          - { label: Descriptions, name: descriptions, widget: text }
-          - { label: Heading Two, name: headingtwo, widget: text }
-          - {
-              label: Digital Link,
-              name: digitallink,
-              widget: object,
-              fields:
-                [
-                  { label: link name, name: linkname, widget: string },
-
-                  { label: link, name: link, widget: string },
-                ],
-            }
-          - {
-              label: Intro Cards,
-              name: intro cards,
-              widget: object,
-              fields:
-                [
-                  {
-                    label: Cards,
-                    name: Cards,
-                    widget: list,
+          - name: hero
+            label: Hero
+            widget: object
+            fields:
+              - name: templateKey
+                label: Template Key
+                widget: hidden
+                default: home
+              - name: heading
+                label: Heading
+              - name: description
+                label: Description
+                widget: markdown
+              - name: headerLink
+                label: eader Link
+                widget: object
+                fields:
+                  - name: linkName
+                    label: Link Name
+                  - name: linkUrl
+                    label: Link Url
+          - name: digitalFuture
+            label: Digital Future
+            widget: object
+            fields:
+              - name: templateKey
+                label: Template Key
+                widget: hidden
+                default: home
+              - name: headingone
+                label: Heading One
+              - name: descriptions
+                label: Descriptions
+              - name: headingtwo
+                label: Heading Two
+              - name: digitallink
+                label: Digital Link
+                widget: object
+                fields:
+                  - name: linkname
+                    label: link name
+                  - name: link
+                    label: link
+                    widget: string
+                  - name: introCards
+                    label: Intro Cards
+                    widget: object
                     fields:
-                      [
-                        {
-                          label: Card heading,
-                          name: cardheading,
-                          widget: string,
-                        },
-                        {
-                          label: Card Description,
-                          name: carddescription,
-                          widget: text,
-                        },
-                        {
-                          label: Card Number,
-                          name: cardnumber,
-                          widget: number,
-                        },
-                      ],
-                  },
-                ],
-            }
-  - name: "youropportunities"
-    label: "Your Opportunities"
-    files:
-      - file: "markdown/opportunities/opportunities.md"
-        label: "Opportunities"
-        name: "opportunities"
+                      - name: cards
+                        label: Cards
+                        widget: list
+                        fields:
+                          - name: cardheading
+                            label: Card Heading
+                          - name: cardDescription
+                            label: Card Description
+                          - name: cardNumber
+                            label: Card Number
+                            widget: number
+          - name: youropportunities
+            label: Your Opportunities
+            widget: object
+            fields:
+              - name: templateKey
+                label: Template Key
+                widget: hidden
+                default: home
+              - name: heading
+                label: Heading
+              - name: description
+                label: Description
+              - name: opportunitiesLink
+                label: Opportunities Link
+                widget: object
+                fields:
+                  - name: linkName
+                    label: link name
+                  - name: link
+                    label: link
+      - label: "teamPage"
+        name: "Team Page"
+        file: "markdown/page/teampage.md"
         fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "opportunities",
-            }
-          - { label: title, name: title, widget: string }
-          - { label: Heading, name: heading, widget: text }
-          - { label: Description, name: description, widget: text }
-          - {
-              label: Opportunities Link,
-              name: opportunitieslink,
-              widget: object,
-              fields:
-                [
-                  { label: link name, name: linkname, widget: string },
-
-                  { label: link, name: link, widget: string },
-                ],
-            }
-
-  - name: "myteam"
-    label: "My Team"
-    files:
-      - file: "markdown/myteam/team.md"
-        label: "My Teams"
-        name: "myteams"
+          - name: templateKey
+            label: Template Key
+            widget: hidden
+            default: "teamdata"
+          - name: teamheading
+            label: Team Heading
+          - name: team cards
+            label: Team Card
+            widget: object
+            fields:
+              - name: cards
+                label: Cards
+                widget: list
+                fields:
+                  - name: cardimage
+                    label: Card image
+                    widget: image
+                  - name: cardheading
+                    label: Card heading
+                  - name: carddescription
+                    label: Card Description
+      - label: "servicesPage"
+        name: "Services Page"
+        file: "markdown/page/servicespage.md"
         fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "myteamdata",
-            }
-          - { label: Title, name: title, widget: string }
-          - { label: Team Heading, name: teamheading, widget: text }
-          - {
-              label: Team Card,
-              name: team cards,
-              widget: object,
-              fields:
-                [
-                  {
-                    label: Cards,
-                    name: Cards,
-                    widget: list,
-                    fields:
-                      [
-                        {
-                          label: Card heading,
-                          name: cardheading,
-                          widget: string,
-                        },
-                        {
-                          label: Card Description,
-                          name: carddescription,
-                          widget: text,
-                        },
-                        { label: Card image, name: cardimage, widget: image },
-                      ],
-                  },
-                ],
-            }
-
-  - name: "privacypolicy"
-    label: "privacypolicy"
-    files:
-      - file: "markdown/privacypolicy/privacypolicy.md"
-        label: "privacy"
-        name: "privacypolicy"
+          - name: templateKey
+            label: Template Key
+            widget: hidden
+            default: "servicedata"
+          - name: servicesmainheading
+            label: Services Main Heading
+          - name: servicesmainpara
+            label: Services Main Para
+          - name: services cards
+            label: Services Card
+            widget: object
+            fields:
+              - name: cards
+                label: Cards
+                widget: list
+                fields:
+                  - name: cardtitle
+                    label: Card Title
+                  - name: cardheading
+                    label: Card heading
+                  - name: carddescription
+                    label: Card Description
+      - label: "aboutPage"
+        name: "About Page"
+        file: "markdown/page/aboutpage.md"
         fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "privacy-policy",
-            }
-          - { label: Title, name: title, widget: string }
-          - { label: page Name, name: heading, widget: text }
-          - { label: description, name: description, widget: markdown }
-
-  - name: "contactUs"
-    label: "Contact Us"
-    files:
-      - file: "markdown/contactUs/contact.md"
-        label: "contactUs"
-        name: "contactUs"
-        fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "contactUs",
-            }
-          - { label: title, name: title, widget: string }
-          - { label: Heading, name: heading, widget: text }
-          - {
-              label: hrIplex Link,
-              name: hriplexlink,
-              widget: object,
-              fields:
-                [
-                  { label: link name, name: linkname, widget: string },
-
-                  { label: link, name: link, widget: string },
-                ],
-            }
-          - {
-              label: Address,
-              name: address,
-              widget: object,
-              fields:
-                [
-                  {
-                    label: Address Heading,
-                    name: addressheading,
-                    widget: text,
-                  },
-
-                  {
-                    label: Address Paragraph,
-                    name: addressparagraph,
-                    widget: text,
-                  },
-
-                  {
-                    label: Address Street Paragraph,
-                    name: addressstreetparagraph,
-                    widget: text,
-                  },
-                ],
-            }
-
-          - { label: Phone Link, name: phonelink, widget: object, fields:
-                # - { label: Phone Heading, name: phoneheading, widget: text }
-                [
-                  { label: link name, name: linkname, widget: string },
-
-                  { label: link, name: link, widget: string },
-                ] }
-          - {
-              label: FaceBook Link,
-              name: facebooklink,
-              widget: object,
-              fields:
-                [
-                  { label: link name, name: linkname, widget: string },
-
-                  { label: link, name: link, widget: string },
-                ],
-            }
-          - {
-              label: Instagram Link,
-              name: instagramlink,
-              widget: object,
-              fields:
-                [
-                  { label: link name, name: linkname, widget: string },
-
-                  { label: link, name: link, widget: string },
-                ],
-            }
-          - {
-              label: Linkedin Link,
-              name: linkedinlink,
-              widget: object,
-              fields:
-                [
-                  { label: link name, name: linkname, widget: string },
-
-                  { label: link, name: link, widget: string },
-                ],
-            }
+          - name: templateKey
+            label: Template Key
+            widget: hidden
+            default: "aboutdata"
+          - name: aboutmainheading
+            label: About Main Heading
+          - name: aboutImages
+            label: About Images
+            widget: list
+            fields:
+              - name: aboutusimage
+                label: About Us Image
+                widget: image
+          - name: brandheading
+            label: Brand Heading
+          - name: brandparagraph
+            label: Brand Paragraph
+          - name: brandimage
+            label: Brand Image
+            widget: image
+          - name: subaboutheading
+            label: Sub About Heading
+          - name: subaboutparagraph
+            label: Sub About Paragraph
+          - name: technologies
+            label: Technologies
+            widget: object
+            fields:
+              - name: templateKey
+                label: Template Key
+                widget: hidden
+                default: aboutdata
+              - name: maintechnologyheading
+                label: Main Technology Heading
+              - name: technologycards
+                label: Technology Cards
+                widget: list
+                fields:
+                  - name: cardtitle
+                    label: Card Title
+                  - name: carddescription
+                    label: Card Description

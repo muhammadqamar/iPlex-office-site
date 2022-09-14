@@ -4,7 +4,7 @@ import { Navbar } from "react-bootstrap"
 import AboutPage from "../layout/about"
 import IplexLogo from "../../assets/images/iPlax-logo.svg"
 
-const Header = () => {
+const Header = ({ backgroundColor }) => {
   const [chColor, setChColor] = useState(false)
   const [barr, setBarr] = useState("navbar-toggler collapsed")
   const [openAbout, setOpenAbout] = useState(false)
@@ -41,6 +41,7 @@ const Header = () => {
         fixed="top"
         collapseOnSelect
         className={`${chColor ? "navbar navbar-scroll " : "navbar navbar-top"}`}
+        style={{ backgroundColor: backgroundColor }}
       >
         <div
           className={`${

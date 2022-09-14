@@ -22,7 +22,19 @@
         line-height: 43.2px;
         padding-left: 15px;
       }
-      .hd-color {
+      .hd-fcolor {
+        background-color: #f9d633;
+        color: #000;
+        padding: 5px 10px;
+        font-size: 50px;
+        font-weight: bold;
+        line-height: 54px;
+        display: inline-block;
+      }
+      .main-word {
+        font-size: 45px;
+        font-weight: bold;
+        padding: 5px 5px;
         background-color: #f9d633;
         color: #000;
         padding: 5px 10px;
@@ -34,27 +46,22 @@
         }
       }
     }
-    .main-word {
-      font-size: 45px;
-      font-weight: bold;
-      padding: 5px 5px;
-      background-color: #f9d633;
-      line-height: 54px;
-      text-align: center;
-      color: rgb(0, 0, 0);
-      @media (max-width: 767px) {
-        font-size: 36px;
-        text-align: left;
-        line-height: 43.2px;
-      }
+    .cards {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
     }
-  }
-  .cards {
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-    @media (max-width: 1100px) {
-      justify-content: center;
+    .all-sections {
+      .main-opportunities {
+        .opportunities-container {
+          color: #fff;
+          text-align: center;
+          .oppertunities-link {
+            color: #fff;
+            border-bottom: 4px solid #fff;
+          }
+        }
+      }
     }
   }
 }

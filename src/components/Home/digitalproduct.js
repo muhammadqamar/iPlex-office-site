@@ -2,7 +2,6 @@ import React from "react"
 import DiscoverCard from "./discoverCard"
 import "./style/digitalproduct.scss"
 import Slider from "react-slick"
-import { Link } from "gatsby"
 
 const Digitalproduct = ({ data }) => {
   const settings = {
@@ -36,19 +35,13 @@ const Digitalproduct = ({ data }) => {
 
   return (
     <div>
-      <div className="digital-product">
-        <h1 className="product-hd">{data.frontmatter.headingtwo}</h1>
-        <p className="product-para">
-          <a className="product-link" href="https://iplex.co/services/">
-            {data.frontmatter.digitallink.linkname}
-          </a>
-        </p>
-      </div>
       <div className="main-card-box">
         <Slider {...settings}>
-          {data.frontmatter.intro_cards.Cards.map((items, index) => (
-            <DiscoverCard key={items} data={items} index={index} />
-          ))}
+          {data.frontmatter.digitalFuture.digitallink.introCards.cards.map(
+            (items, index) => (
+              <DiscoverCard key={items} data={items} index={index} />
+            )
+          )}
         </Slider>
       </div>
     </div>

@@ -11,16 +11,12 @@ const Index = () => {
         nodes {
           frontmatter {
             templateKey
-            opportunitieslink {
-              link
-              linkname
-            }
-            heading
+            teamheading
             team_cards {
-              Cards {
+              cards {
+                cardimage
                 cardheading
                 carddescription
-                teamsImges
               }
             }
           }
@@ -31,19 +27,14 @@ const Index = () => {
   const {
     allMarkdownRemark: { nodes },
   } = teamData
-
-  const opportunities = nodes.filter(
-    data => data.frontmatter.templateKey === "opportunities"
+  const teamcards = nodes.filter(
+    data => data.frontmatter.templateKey === "teamdata"
   )?.[0]
-  console.log("oppertu data", opportunities)
-  const team_cards = nodes.filter(
-    data => data.frontmatter.templateKey === "myteamdata"
-  )?.[0]
-  console.log("cards data", team_cards)
+  console.log("teams cards data", teamcards)
 
   return (
     <div>
-      <Mainpage data={opportunities} tdata={team_cards} />
+      <Mainpage datacard={teamcards} />
     </div>
   )
 }

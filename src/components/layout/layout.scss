@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Graphik";
+  // font-family: "Graphik";
+  font-family: "Rubik", sans-serif;
 }
 body {
   h1,
@@ -40,7 +42,7 @@ body {
     }
   }
   .nav-down-padding {
-    padding: 10px 60px;
+    padding: 10px 20px;
     @media (max-width: 1024px) {
       padding: 10px 30px;
     }
@@ -132,7 +134,7 @@ body {
     .contact-btn {
       text-align: left;
       width: 12%;
-      min-width: 182px;
+      min-width: 167px;
       text-decoration: none;
 
       @media (max-width: 600px) {
