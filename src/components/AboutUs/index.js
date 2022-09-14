@@ -2,59 +2,100 @@ import React from "react"
 import "./style/index.scss"
 import aboutImg from "../../assets/images/group.jpg"
 import TechnologiesWork from "./technologiesWork"
+import { useStaticQuery, graphql } from "gatsby"
 
 const Index = () => {
+  const aboutdata = useStaticQuery(graphql`
+    query aData {
+      allMarkdownRemark {
+        nodes {
+          frontmatter {
+            templateKey
+            aboutmainheading
+            aboutImages {
+              aboutusimage
+            }
+            brandheading
+            brandparagraph
+            brandimage
+            subaboutheading
+            subaboutparagraph
+            technologies {
+              maintechnologyheading
+              technologycards {
+                cardtitle
+                carddescription
+              }
+            }
+          }
+        }
+      }
+    }
+  `)
+  const {
+    allMarkdownRemark: { nodes },
+  } = aboutdata
+  const technologydata = nodes.filter(
+    data => data.frontmatter.templateKey === "aboutdata"
+  )?.[0]
+  console.log("technology cards data", technologydata)
+
   return (
     <div className="main_about">
       <div className="main_container">
         <h1 className="about_heading">
-          Let's tell the <span className="hd_color">stories</span> that matter
+          {technologydata?.frontmatter.aboutmainheading.slice(0, 15)}
+          <span className="hd_color">
+            {technologydata?.frontmatter.aboutmainheading.slice(15, 23)}
+          </span>
+          {technologydata?.frontmatter.aboutmainheading.slice(23)}
         </h1>
       </div>
       <div className="about_category">
-        <div className="img_bx">
-          <img className="about_person" src={aboutImg} />
-        </div>
-        <div className="img_bx img_bx2">
-          <img className="about_person" src={aboutImg} />
-        </div>
-        <div className="img_bx">
-          <img className="about_person" src={aboutImg} />
-        </div>
+        {technologydata?.frontmatter.aboutImages.map((item, index) => (
+          <div
+            key={index}
+            className={index === 1 ? " img_bx img_bx2" : "img_bx"}
+          >
+            <img className="about_person" src={item.aboutusimage} />
+          </div>
+        ))}
       </div>
       <div className="about_brand_category">
-        <h4 className="brand_heading">Building a brand new category</h4>
+        <h4 className="brand_heading">
+          {technologydata?.frontmatter.brandheading}
+        </h4>
         <div>
           <p className="brand_para">
-            We do much more than simply deliver technology or provide managed
-            services. At iPlex, we offer clients the unique skill we’ve gained
-            from our one-of-a-kind experience with our partners and clients
+            {technologydata?.frontmatter.brandparagraph.slice(0, 197)}
           </p>
           <p className="brand_para">
-            Our solutions come from a process of perception, leading edge, and
-            profound knowledge of various technologies.
+            {technologydata?.frontmatter.brandparagraph.slice(197)}
           </p>
         </div>
       </div>
       <div className="about_us">
         <div className="img_bx img_bx2">
-          <img className="about_person" src={aboutImg} />
+          <img
+            className="about_person"
+            src={technologydata?.frontmatter.brandimage}
+          />
         </div>
         <div className="about_us_rightsection">
-          <h4 className="about_us_heading">About Us</h4>
+          <h4 className="about_us_heading">
+            {technologydata?.frontmatter.subaboutheading}
+          </h4>
           <div>
             <p className="about_us_para">
-              Since our inception in 2009, we are growing into an organization
-              that rivals any modern day software company.
+              {technologydata?.frontmatter.subaboutparagraph.slice(0, 109)}
             </p>
             <p className="about_us_para">
-              Since our inception in 2009, we are growing into an organization
-              that rivals any modern day software company.
+              {technologydata?.frontmatter.subaboutparagraph.slice(109)}
             </p>
           </div>
         </div>
       </div>
-      <TechnologiesWork />
+      <TechnologiesWork data={technologydata} />
     </div>
   )
 }
