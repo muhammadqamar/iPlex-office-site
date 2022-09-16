@@ -9,11 +9,12 @@ const TechnologiesWork = ({ data }) => {
     infinite: true,
     slidesToShow: 2,
     slidesToScroll: 2,
+    centerMode: true,
     speed: 1000,
 
     responsive: [
       {
-        breakpoint: 700,
+        breakpoint: 767,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,

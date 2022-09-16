@@ -46,24 +46,26 @@ const Index = () => {
           {sericecards?.frontmatter?.servicesmainpara}
         </p>
       </div>
-      <div className="main_services_cards">
-        {sericecards?.frontmatter?.services_cards.cards.map((item, index) => (
-          <div
-            key={index}
-            className={
-              (index === 1 && " service_card service_headingone") ||
-              (index === 2 && " service_card service_headingtwo") ||
-              (index === 3 && " service_card service_headingthree") ||
-              (index === 4 && " service_card service_headingfour") ||
-              (index === 5 && " service_card service_headingfive") ||
-              "service_card"
-            }
-          >
-            <span className="react">{item.cardtitle}</span>
-            <h5 className={"service_heading"}>{item.cardheading}</h5>
-            <p className="service_para">{item.carddescription}</p>
-          </div>
-        ))}
+      <div className="sub_service_container">
+        <div className="main_services_cards">
+          {sericecards?.frontmatter?.services_cards.cards.map((item, index) => (
+            <div
+              key={index}
+              className={
+                (index === 1 && " service_card service_headingone") ||
+                (index === 2 && " service_card service_headingtwo") ||
+                (index === 3 && " service_card service_headingthree") ||
+                (index === 4 && " service_card service_headingfour") ||
+                (index === 5 && " service_card service_headingfive") ||
+                "service_card"
+              }
+            >
+              <span className="react">{item.cardtitle}</span>
+              <h5 className={"service_heading"}>{item.cardheading}</h5>
+              <p className="service_para">{item.carddescription}</p>
+            </div>
+          ))}
+        </div>
       </div>
       <Oppertunities />
     </div>
