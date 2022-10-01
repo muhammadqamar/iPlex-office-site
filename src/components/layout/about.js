@@ -19,6 +19,9 @@ const About = () => {
           <Link style={{ textDecoration: "none" }} to="/contact-us">
             <h1 className="page-name-1">Contact</h1>
           </Link>
+          <Link style={{ textDecoration: "none" }} to="/construction">
+            <h1 className="page-name-1">Construction</h1>
+          </Link>
         </div>
         <div className="addres">
           <h4 className="addres-name">
