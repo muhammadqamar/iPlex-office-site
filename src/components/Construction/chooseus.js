@@ -43,30 +43,35 @@ const arrow_content = [
 ]
 
 const Chooseus = () => {
-  const [tab, settab] = useState(false)
+  const [tab, settab] = useState(0)
 
   return (
     <div className="main_choose">
-      <div className="choose_container">
+      <div className="row choose_container">
         <h1 className="choose_heading">WHY CHOOSE US</h1>
         <h2 className="choose_subheading">EXCELLENCE IS OUR ATTITUDE</h2>
         {cards_lists.map((item, index) => {
           return (
-            <div className="flx_bx">
-              <div className="left_section">
+            <>
+              <div className=" col-md-6 col-lg-5 left_section">
                 <div className="lists">
                   <div key={index} className="list">
                     <div className="list_tab">
                       <img className="card_logo" src={item.logo} alt="logo" />
                     </div>
-                    <div onClick={() => settab(index)} className="para_section">
+                    <div
+                      onClick={() => settab(index)}
+                      className={
+                        tab === index ? "list_active same" : "para_section same"
+                      }
+                    >
                       <p className="list_para">{item.card_heading}</p>
                     </div>
                   </div>
                 </div>
               </div>
-              {tab === index ? (
-                <div className="right_main">
+              {tab === index && (
+                <div className=" col-md-6 col-lg-5 right_main">
                   <div className="right_section">
                     <div className="right_img_bx">
                       <img
@@ -97,10 +102,8 @@ const Chooseus = () => {
                     </div>
                   </div>
                 </div>
-              ) : (
-                ""
               )}
-            </div>
+            </>
           )
         })}
       </div>
