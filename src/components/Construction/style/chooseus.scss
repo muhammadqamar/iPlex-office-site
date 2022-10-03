@@ -20,10 +20,10 @@
       text-transform: uppercase;
       margin-bottom: 80px;
     }
-    .flx_bx {
-      display: flex;
-      gap: 10px;
-    }
+    // .flx_bx {
+    //   display: flex;
+    //   gap: 10px;
+    // }
   }
   .left_section {
     min-width: 475px;
@@ -75,19 +75,21 @@
             min-width: 115px;
           }
         }
-        .para_section {
+        .same {
           width: 100%;
           height: auto;
           cursor: pointer;
-          color: #fff;
           font-size: 18px;
           padding: 33px 0;
-          background-color: #2c3e50;
           border-radius: 0;
           text-transform: uppercase;
           border: 0;
           text-decoration: none;
           transition: all 0.5s ease-in-out;
+        }
+        .para_section {
+          color: #fff;
+          background-color: #2c3e50;
           &:hover {
             background: #fff;
             color: #2c3e50;
@@ -95,6 +97,10 @@
           .list_para {
             background-color: transparent;
           }
+        }
+        .list_active {
+          background: #fff;
+          color: #2c3e50;
         }
       }
     }

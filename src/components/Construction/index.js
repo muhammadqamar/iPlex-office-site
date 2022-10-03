@@ -4,6 +4,7 @@ import "./style/index.scss"
 import Rightarrow from "../../assets/images/right_arrow.png"
 import Cranelift from "./cranelift"
 import Chooseus from "./chooseus"
+import Processfollow from "./processfollow"
 const Index = () => {
   return (
     <>
@@ -28,6 +29,7 @@ const Index = () => {
       </div>
       <Cranelift />
       <Chooseus />
+      <Processfollow />
     </>
   )
 }

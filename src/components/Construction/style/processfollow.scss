@@ -1,0 +1,52 @@
+.process_banner {
+  background-image: url(../../../assets/images/process_banner.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 725px;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: rgba(44, 62, 80, 0.9);
+    z-index: -1;
+  }
+  .process_container {
+    max-width: 1440px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin: 0 auto;
+    .process_image {
+      margin-top: -79px;
+      text-align: center;
+      .left_logo {
+        width: auto;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+    .process_accordian {
+      color: #fff;
+      padding: 55px 0 50px;
+      .process_info {
+        margin-bottom: 40px;
+        text-transform: uppercase;
+        .process_heading {
+          font-size: 20px;
+          text-transform: uppercase;
+          color: #f2cc2b;
+          letter-spacing: 2px;
+        }
+        .process_subheading {
+          margin-top: 0;
+          letter-spacing: 2px;
+        }
+      }
+    }
+  }
+}
