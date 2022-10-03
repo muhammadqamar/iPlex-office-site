@@ -5,6 +5,7 @@ import Rightarrow from "../../assets/images/right_arrow.png"
 import Cranelift from "./cranelift"
 import Chooseus from "./chooseus"
 import Processfollow from "./processfollow"
+import Blognews from "./blognews"
 const Index = () => {
   return (
     <>
@@ -30,6 +31,7 @@ const Index = () => {
       <Cranelift />
       <Chooseus />
       <Processfollow />
+      <Blognews />
     </>
   )
 }

@@ -56,9 +56,9 @@ const Processfollow = () => {
             <h1 className="process_heading">PROCESS WE FOLLOW</h1>
             <h2 className="process_subheading">WE SATISFY OUR CLIENTS</h2>
           </div>
-          {accordianData.map((item, index) => (
-            <Accordion defaultActiveKey={0} alwaysOpen>
-              <Accordion.Item key={index} eventKey={index}>
+          <Accordion defaultActiveKey={0} alwaysOpen>
+            {accordianData.map((item, index) => (
+              <Accordion.Item eventKey={index}>
                 <Accordion.Header>
                   <img
                     className="num_logo"
@@ -85,8 +85,8 @@ const Processfollow = () => {
                 </Accordion.Header>
                 <Accordion.Body>{item.accordpara}</Accordion.Body>
               </Accordion.Item>
-            </Accordion>
-          ))}
+            ))}
+          </Accordion>
         </div>
       </div>
     </div>
