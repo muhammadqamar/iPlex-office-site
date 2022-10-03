@@ -47,13 +47,13 @@ const Chooseus = () => {
 
   return (
     <div className="main_choose">
-      <div className="row choose_container">
+      <div className=" choose_container">
         <h1 className="choose_heading">WHY CHOOSE US</h1>
         <h2 className="choose_subheading">EXCELLENCE IS OUR ATTITUDE</h2>
-        {cards_lists.map((item, index) => {
-          return (
-            <>
-              <div className=" col-md-6 col-lg-5 left_section">
+        <div className="tab_flex_box">
+          <div>
+            {cards_lists.map((item, index) => (
+              <div className="left_section">
                 <div className="lists">
                   <div key={index} className="list">
                     <div className="list_tab">
@@ -70,8 +70,12 @@ const Chooseus = () => {
                   </div>
                 </div>
               </div>
-              {tab === index && (
-                <div className=" col-md-6 col-lg-5 right_main">
+            ))}
+          </div>
+          {cards_lists.map(
+            (item, index) =>
+              tab === index && (
+                <div className=" right_main">
                   <div className="right_section">
                     <div className="right_img_bx">
                       <img
@@ -81,12 +85,7 @@ const Chooseus = () => {
                       />
                     </div>
                     <div className="bottom_content">
-                      <p className="rightchoose_para">
-                        Lorem ipsum dolor sit amet, consectetur for adipisicing
-                        elit, sed do eiusmod tempor to incidiunt ut labore et
-                        dolore magna aliquai. Ut enim ad minim veniam, quis
-                        nostr.
-                      </p>
+                      <p className="rightchoose_para">{item.content}</p>
                       {arrow_content.map((item, index) => (
                         <div key={index} className="choose_last_bx">
                           <div className="arrow_bx">
@@ -102,10 +101,9 @@ const Chooseus = () => {
                     </div>
                   </div>
                 </div>
-              )}
-            </>
-          )
-        })}
+              )
+          )}
+        </div>
       </div>
     </div>
   )
