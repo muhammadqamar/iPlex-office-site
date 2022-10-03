@@ -40,6 +40,21 @@
         transition: all 500ms ease;
         &:hover {
           background: #283949;
+          .img_bx {
+            background: #f2cd27;
+            &::before {
+              content: "";
+              position: absolute;
+              top: 23px;
+              left: 23px;
+              width: 13px;
+              height: 15px;
+              background-image: url(../../../assets/images/right_arrow-white.svg);
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: cover;
+            }
+          }
         }
         .img_bx {
           position: absolute;
@@ -55,6 +70,18 @@
           white-space: nowrap;
           &:hover {
             background: #f2cd27;
+            &::before {
+              content: "";
+              position: absolute;
+              top: 23px;
+              left: 23px;
+              width: 13px;
+              height: 15px;
+              background-image: url(../../../assets/images/right_arrow-white.svg);
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: cover;
+            }
           }
           .right_arrow {
             width: 11.15px;
