@@ -5,7 +5,9 @@ import Rightarrow from "../../assets/images/right_arrow.png"
 import Cranelift from "./cranelift"
 import Chooseus from "./chooseus"
 import Processfollow from "./processfollow"
+import OurServiceWorker from "./ourServiceWorker"
 import Blognews from "./blognews"
+import CreativeArchitechture from "./creativeArchitechture"
 const Index = () => {
   return (
     <>
@@ -15,7 +17,7 @@ const Index = () => {
           <div className="content">
             <h1 className="hero_heading">hello!</h1>
             <h2 className="sub_heading">we are mistri</h2>
-            <a className="hero_link">
+            <a className="secondary_custom_button">
               read more
               <div className="img_bx">
                 <img
@@ -31,7 +33,9 @@ const Index = () => {
       <Cranelift />
       <Chooseus />
       <Processfollow />
+      <OurServiceWorker />
       <Blognews />
+      <CreativeArchitechture />
     </>
   )
 }

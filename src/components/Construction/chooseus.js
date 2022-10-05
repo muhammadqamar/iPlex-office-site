@@ -1,7 +1,6 @@
 import React, { useState } from "react"
-import "./style/chooseus.scss"
+import "./style/chooseUs.scss"
 
-// import { Tab, Tabs } from "react-bootstrap"
 import listlogo1 from "../../assets/images/choose_card_logo1.png"
 import listlogo2 from "../../assets/images/choose_card_logo2.png"
 import listlogo3 from "../../assets/images/choose_card_logo3.png"

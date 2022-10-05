@@ -1,5 +1,5 @@
 import React from "react"
-import "./style/cranelift.scss"
+import "./style/craneLift.scss"
 import cardlogo from "../../assets/images/card_crane_logo.png"
 import cardlogo2 from "../../assets/images/card_logo2.png"
 import cardlogo3 from "../../assets/images/card_logo3.png"

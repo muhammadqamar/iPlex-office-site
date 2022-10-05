@@ -1,5 +1,5 @@
 import React from "react"
-import "./style/processfollow.scss"
+import "./style/processFollow.scss"
 import Accordion from "react-bootstrap/Accordion"
 
 import userlogo from "../../assets/images/process_left_logo.png"
