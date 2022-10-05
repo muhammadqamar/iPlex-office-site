@@ -2,11 +2,11 @@ import React from "react"
 import "./style/index.scss"
 
 import Rightarrow from "../../assets/images/right_arrow.png"
-import Cranelift from "./cranelift"
-import Chooseus from "./chooseus"
-import Processfollow from "./processfollow"
+import Cranelift from "./craneLift"
+import Chooseus from "./chooseUs"
+import Processfollow from "./processFollow"
 import OurServiceWorker from "./ourServiceWorker"
-import Blognews from "./blognews"
+import Blognews from "./blogNews"
 import CreativeArchitechture from "./creativeArchitechture"
 const Index = () => {
   return (
@@ -19,13 +19,7 @@ const Index = () => {
             <h2 className="sub_heading">we are mistri</h2>
             <a className="secondary_custom_button">
               read more
-              <div className="img_bx">
-                <img
-                  className="right_arrow"
-                  src={Rightarrow}
-                  alt="right arrow"
-                />
-              </div>
+              <div className="img_bx" />
             </a>
           </div>
         </div>

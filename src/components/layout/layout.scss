@@ -215,6 +215,7 @@ body {
   text-transform: uppercase;
   position: relative;
   transition: all 500ms ease;
+
   &:hover {
     background: #283949;
     color: #fff;
@@ -246,6 +247,19 @@ body {
     transition: all 500ms ease;
     text-align: center;
     white-space: nowrap;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 22px;
+      left: 24px;
+      width: 11.15px;
+      height: 12.8px;
+      background-image: url(../../assets/images/right_arrow.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
     &:hover {
       background: #f2cd27;
       &::before {
@@ -260,11 +274,6 @@ body {
         background-position: center;
         background-size: cover;
       }
-    }
-    .right_arrow {
-      width: 11.15px;
-      height: 12.8px;
-      margin-bottom: 6px;
     }
   }
 }
