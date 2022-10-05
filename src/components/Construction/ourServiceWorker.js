@@ -9,12 +9,12 @@ const serviceSlider = [
   {
     quotelogo: logo,
     text: "Lorem Ipsum is simply dummy text of the printing and pesetting to industry. Lorem Ipsum has been the industry's standard dummy tet ever since they 1500s,",
-    subheading: "Mark Lee | CEO, ABC Design",
+    subheading: "Mark Lee | CEO, ABC Design 1 : One",
   },
   {
     quotelogo: logo2,
     text: "Lorem Ipsum is simply dummy text of the printing and pesetting to industry. Lorem Ipsum has been the industry's standard dummy tet ever since they 1500s,",
-    subheading: "Mard Devid | Aricell Developer",
+    subheading: "Mard Devid | Aricell Developer 2 : Two",
   },
   {
     quotelogo: logo,
@@ -41,24 +41,15 @@ const serviceSlider = [
 const OurServiceWorker = () => {
   const slidersettings = {
     dots: true,
-    infinite: true,
-    speed: 500,
     arrows: false,
-    className: "center",
+    infinite: true,
     slidesToShow: 2,
-    slidesToScroll: 1,
+    slidesToScroll: 2,
+    speed: 1000,
 
     responsive: [
       {
-        breakpoint: 1030,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
-
-      {
-        breakpoint: 767,
+        breakpoint: 700,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -72,13 +63,29 @@ const OurServiceWorker = () => {
       <Slider {...slidersettings}>
         {serviceSlider.map((item, index) => (
           <div key={index} className="service_cards">
-            <div className="service_info">
+            <div
+              className={
+                (index === 1 && "service_info second_info") ||
+                "service_info first_info"
+              }
+            >
               <div className="service_logo">
-                <img className="logo" src={item.quotelogo} alt="quote logo" />
+                <img
+                  className={
+                    (index === 0 && "logo quote") || "logo second_quote"
+                  }
+                  src={item.quotelogo}
+                  alt="quote logo"
+                />
               </div>
-              <div className="service_content">
+              <div
+                className={
+                  (index === 0 && "service_content first_content") ||
+                  "service_content second_content"
+                }
+              >
                 <p className="service_para">{item.text}</p>
-                <h5 className="content_heading">{item.subheading}</h5>
+                <h5 className="service_heading">{item.subheading}</h5>
               </div>
             </div>
           </div>
