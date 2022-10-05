@@ -102,13 +102,7 @@ const CreativeArchitechture = () => {
           </div>
           <a className="secondary_custom_button creative_secondary_btn">
             purchase now
-            <div className="img_bx">
-              <img
-                className="right_arrow arrow_btn"
-                src={Rightarrow}
-                alt="right arrow"
-              />
-            </div>
+            <div className="img_bx" />
           </a>
         </div>
       </div>

@@ -19,10 +19,12 @@
   // Slider
 
   .slick-slider {
+    max-width: 1102px;
+    margin: 0 auto;
     .slick-list {
       padding-bottom: 0;
       .slick-slide {
-        max-width: 555px;
+        // max-width: 555px;
         margin-left: auto;
       }
     }
@@ -66,7 +68,7 @@
     }
   }
   .service_cards {
-    max-width: 555px;
+    // max-width: 555px;
     .service_info {
       max-width: 535px;
       min-height: 173px;

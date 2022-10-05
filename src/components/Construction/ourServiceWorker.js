@@ -44,8 +44,9 @@ const OurServiceWorker = () => {
     arrows: false,
     infinite: true,
     slidesToShow: 2,
-    slidesToScroll: 2,
+    slidesToScroll: 1,
     speed: 1000,
+    // centerPadding: "100px",
 
     responsive: [
       {
@@ -60,19 +61,21 @@ const OurServiceWorker = () => {
   return (
     <div className="service_main">
       <div className="overlay"></div>
+
       <Slider {...slidersettings}>
         {serviceSlider.map((item, index) => (
           <div key={index} className="service_cards">
             <div
               className={
-                (index === 1 && "service_info second_info") ||
-                "service_info first_info"
+                index % 2 == 0
+                  ? "service_info first_info"
+                  : "service_info second_info"
               }
             >
               <div className="service_logo">
                 <img
                   className={
-                    (index === 0 && "logo quote") || "logo second_quote"
+                    index % 2 == 0 ? "logo quote" : "logo second_quote"
                   }
                   src={item.quotelogo}
                   alt="quote logo"
@@ -80,8 +83,9 @@ const OurServiceWorker = () => {
               </div>
               <div
                 className={
-                  (index === 0 && "service_content first_content") ||
-                  "service_content second_content"
+                  index % 2 == 0
+                    ? "service_content first_content"
+                    : "service_content second_content"
                 }
               >
                 <p className="service_para">{item.text}</p>
