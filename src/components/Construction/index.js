@@ -8,6 +8,8 @@ import Processfollow from "./processFollow"
 import OurServiceWorker from "./ourServiceWorker"
 import Blognews from "./blogNews"
 import CreativeArchitechture from "./creativeArchitechture"
+import OfferClients from "./offerClients"
+import MistriCards from "./mistriCards"
 const Index = () => {
   return (
     <>
@@ -27,9 +29,11 @@ const Index = () => {
       <Cranelift />
       <Chooseus />
       <Processfollow />
+      <OfferClients />
       <OurServiceWorker />
       <Blognews />
       <CreativeArchitechture />
+      <MistriCards />
     </>
   )
 }

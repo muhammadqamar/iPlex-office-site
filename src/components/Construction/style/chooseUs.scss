@@ -23,7 +23,9 @@
     .tab_flex_box {
       display: flex;
       gap: 10px;
-
+      // @media (max-width: 1130px) {
+      //   flex-wrap: wrap;
+      // }
       .left_section {
         min-width: 475px;
         &:nth-child(odd) {

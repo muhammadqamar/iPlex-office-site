@@ -86,7 +86,7 @@
         bottom: -10px;
         left: 0;
         width: 100%;
-        height: 1px;
+        height: 0.5px;
         background-color: #828e9a;
       }
       &::after {
@@ -123,7 +123,7 @@
           content: "";
           bottom: -19px;
           right: -1px;
-          width: 1px;
+          width: 0.5px;
           background-color: #828e9a;
         }
         .service_para {
@@ -144,7 +144,7 @@
       }
       .first_content {
         &::after {
-          height: 35px;
+          height: 19px;
         }
       }
       .second_content {
@@ -158,11 +158,11 @@
         transform: rotate(-2deg);
       }
       &::after {
-        bottom: -20px;
+        bottom: -19px;
         left: -1px;
         right: -1px;
-        width: 1px;
-        height: 35px;
+        width: 0.5px;
+        height: 20px;
         background-color: #828e9a;
       }
     }

@@ -1,0 +1,159 @@
+.main_client {
+  width: 100%;
+  background: #f9f9f9;
+  padding: 75px 0 100px;
+  .client_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    .title_section {
+      font-weight: 400;
+      line-height: 1.4;
+      margin-bottom: 80px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-align: center;
+      .title_heading {
+        color: #f2cc2b;
+        font-size: 20px;
+        margin: 20px 0 16px;
+      }
+      .title_subheading {
+        color: #6f6f6f;
+        font-size: 30px;
+      }
+    }
+    .nav-tabs {
+      margin-bottom: 45px !important;
+      gap: 12px;
+      .nav-item {
+        position: relative;
+        transition: all 500ms ease;
+        max-width: 279px;
+        &:first-child::before {
+          position: absolute;
+          content: "";
+          top: 0px;
+          z-index: 1;
+          border-top: 10px solid #f9f9f9;
+          left: 0;
+          border-right: 280px solid transparent;
+        }
+        &:last-child::before {
+          position: absolute;
+          content: "";
+          top: 0px;
+          z-index: 1;
+          border-top: 10px solid #f9f9f9;
+          right: 0;
+          border-left: 226px solid transparent;
+        }
+        .nav-link.active {
+          color: #fff;
+          background-color: #2c3e50;
+          border: none;
+          &:after {
+            border-top: 10px solid #283949;
+            bottom: -8px;
+          }
+        }
+        .nav-link {
+          transition: inherit;
+          background-color: #f3cc29;
+          padding: 20px 48px;
+          border-radius: 0;
+          color: #fff;
+          transition: all 500ms ease;
+          &:hover {
+            color: #fff;
+            background-color: #2c3e50;
+            border: 1px solid transparent;
+            transition: all 500ms ease;
+            &::after {
+              border-top: 10px solid #283949;
+              bottom: -8px;
+              transition: all 500ms ease;
+            }
+          }
+          &::after {
+            position: absolute;
+            content: "";
+            bottom: 0px;
+            left: 50%;
+            margin-left: -18px;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            transition: all 500ms ease;
+          }
+        }
+      }
+    }
+    .tab_content {
+      max-width: 1140px;
+      .tab_container {
+        display: flex;
+        gap: 30px;
+        // flex-wrap: wrap;
+        .tab_item {
+          grid-row-start: 1;
+          grid-row-end: 3;
+        }
+        .tab_info_content {
+          padding: 10px;
+          font-size: 13px;
+          line-height: 30px;
+          color: #6f6f6f;
+          .tab_heading {
+            color: #2c3e50;
+            margin: 0 0 20px;
+            text-transform: uppercase;
+            font-size: 18px;
+            letter-spacing: 1.5px;
+            font-weight: 700;
+          }
+          .tab_para {
+            margin-bottom: 20px;
+          }
+          .icons_flx {
+            display: flex;
+            gap: 45px;
+            .inner_icon_flx {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              .icon_box {
+                width: 90px;
+                height: 90px;
+                cursor: pointer;
+                line-height: 90px;
+                text-align: center;
+                font-size: 25px;
+                color: #999;
+                background-color: #fff;
+                border: 2px solid #f1f1f1;
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                  background-color: #f3cc29;
+                }
+                .icon_logo {
+                  width: 30px;
+                  height: 30px;
+                  object-fit: cover;
+                }
+              }
+              .icon_text {
+                margin-top: 10px;
+                font-weight: 600;
+                text-transform: capitalize;
+              }
+              .card_detail_para {
+                text-align: center;
+                line-height: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
