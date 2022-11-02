@@ -2,7 +2,7 @@ import React from "react"
 import "./style/processFollow.scss"
 import Accordion from "react-bootstrap/Accordion"
 
-import userlogo from "../../assets/images/process_left_logo.png"
+import userlogo from "../../assets/images/process_left_logo.webp"
 import numlogo1 from "../../assets/images/accordian_num1.png"
 import numlogo2 from "../../assets/images/accordian_num2.png"
 import numlogo3 from "../../assets/images/accordian_num3.png"

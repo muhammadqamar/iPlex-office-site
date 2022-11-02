@@ -23,9 +23,6 @@
     .tab_flex_box {
       display: flex;
       gap: 10px;
-      // @media (max-width: 1130px) {
-      //   flex-wrap: wrap;
-      // }
       .left_section {
         min-width: 475px;
         &:nth-child(odd) {
@@ -119,7 +116,8 @@
               .card_logo {
                 background-color: #fcd846;
                 padding: 15px 25px;
-                min-width: 115px;
+                width: 115px;
+                height: 100%;
               }
               &:before {
                 position: absolute;
@@ -223,7 +221,7 @@
             height: 302px;
             .right_img {
               width: 314px;
-              height: auto;
+              height: 100%;
               object-fit: cover;
             }
           }

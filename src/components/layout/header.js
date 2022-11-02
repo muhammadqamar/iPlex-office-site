@@ -4,6 +4,27 @@ import { Navbar } from "react-bootstrap"
 import AboutPage from "../layout/about"
 import IplexLogo from "../../assets/images/iPlax-logo.svg"
 
+const navItems = [
+  {
+    navlink: "Home",
+  },
+  {
+    navlink: "Services",
+  },
+  {
+    navlink: "About US",
+  },
+  {
+    navlink: "Construction",
+  },
+  {
+    navlink: "Team",
+  },
+  {
+    navlink: "Contact US",
+  },
+]
+
 const Header = ({ backgroundColor }) => {
   const [chColor, setChColor] = useState(false)
   const [barr, setBarr] = useState("navbar-toggler collapsed")
@@ -35,6 +56,33 @@ const Header = ({ backgroundColor }) => {
     }
   }, [])
 
+  const navlinked = area => {
+    let link
+    switch (area) {
+      case "Home":
+        link = "/"
+        break
+      case "Services":
+        link = "/services"
+        break
+      case "About US":
+        link = "/aboutus"
+        break
+      case "Construction":
+        link = "/construction"
+        break
+      case "Team":
+        link = "/team"
+        break
+      case "Contact US":
+        link = "/contact-us"
+        break
+      default:
+        break
+    }
+    return link
+  }
+
   return (
     <>
       <Navbar
@@ -55,6 +103,18 @@ const Header = ({ backgroundColor }) => {
               <img src={IplexLogo} alt="Iplex logo" />
             </Link>
           </Navbar.Brand>
+          <div className="nav_bx">
+            {navItems.map((item, index) => (
+              <Link
+                activeClassName="active_item"
+                className="nav_heading_link"
+                key={index}
+                to={navlinked(item.navlink)}
+              >
+                <h4 className="nav_item">{item.navlink}</h4>
+              </Link>
+            ))}
+          </div>
           <button
             className={barr}
             onClick={() => {
@@ -63,9 +123,9 @@ const Header = ({ backgroundColor }) => {
             }}
             type="button"
           >
-            <span className="toggler-icon top-bar"></span>
-            <span className="toggler-icon middle-bar"></span>
-            <span className="toggler-icon bottom-bar"></span>
+            <button className="toggler-icon top-bar"></button>
+            <button className="toggler-icon middle-bar"></button>
+            <button className="toggler-icon bottom-bar"></button>
           </button>
           <Link to="/" className="contact-btn">
             <h4 className=" link-btn">Hi, can we talk?</h4>

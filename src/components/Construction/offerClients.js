@@ -9,6 +9,16 @@ import pencillogo from "../../assets/images/pencil_logo.svg"
 import poniterlogo from "../../assets/images/hand_pointer_logo.svg"
 import checklogo from "../../assets/images/check_logo.svg"
 
+const city = ["lhr", "islmbd", "rwlpndi", "gujrt", "pashwr", "kotla"]
+let i = 0
+for (i = 0; i < 6; i++) {
+  console.log("city here", city[i])
+}
+
+const cityi = ["lhr", "islmbd", "rwlpndi", "gujrt", "pashwr", "kotla"]
+
+console.log("city reverse here", cityi.reverse())
+
 const tabtitle = [
   {
     title: "residential construction",

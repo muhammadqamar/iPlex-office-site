@@ -21,7 +21,7 @@
     margin: 0 auto;
 
     .cards_bg_img {
-      background-image: url(../../../assets/images/card_bg_img1.jpg);
+      background-image: url(../../../assets/images/card_bg_img1.webp);
       background-repeat: no-repeat;
       width: 390px;
       background-size: cover;
@@ -78,6 +78,10 @@
         //   height: 135px;
         //   background-color: rgba(51, 51, 51, 0.2);
         // }
+        .img_logo {
+          width: 57px;
+          height: 58px;
+        }
       }
       .box_title {
         .card_heading {

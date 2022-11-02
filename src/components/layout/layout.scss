@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  // font-family: "Graphik";
   font-family: "Rubik", sans-serif;
 }
 body {
@@ -21,8 +20,7 @@ body {
     padding: 0;
   }
 }
-
-// header  styleing
+// header  styling
 .navbar-top {
   background-color: transparent;
 }
@@ -33,28 +31,24 @@ body {
   padding: 0 !important;
   width: 100%;
   transition: all ease-in-out 0.2s;
-
   .nav-top-padding {
-    padding: 24px 60px;
-
+    padding: 0 20px;
     @media (max-width: 1024px) {
       padding: 15px 30px;
     }
   }
   .nav-down-padding {
-    padding: 10px 20px;
+    padding: 0 20px;
     @media (max-width: 1024px) {
       padding: 10px 30px;
     }
   }
-
   .nav-container {
     width: 1440px;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     .navbar-brand {
       padding: 0 !important;
       .site-logo {
@@ -69,18 +63,15 @@ body {
         }
       }
     }
-
     .navbar-toggler {
       display: block !important;
       cursor: pointer;
       border: none;
       color: rgb(0 0 0 / 0%);
       transition: all ease-in-out 0.2s;
-
       &:hover span {
         background-color: #f9d633;
       }
-
       .navbar-toggler:focus,
       .navbar-toggler:active,
       .navbar-toggler-icon:focus {
@@ -88,7 +79,6 @@ body {
         box-shadow: none !important;
         border: none !important;
       }
-
       .toggler-icon {
         width: 26px;
         height: 4px;
@@ -130,20 +120,17 @@ body {
         transition: all ease-in-out 0.4s;
       }
     }
-
     .contact-btn {
       text-align: left;
       width: 12%;
       min-width: 167px;
       text-decoration: none;
-
       @media (max-width: 600px) {
         display: none;
       }
       @media (max-width: 768px) {
         min-width: 146px;
       }
-
       .link-btn {
         color: #f9d633;
         font-size: 20px;
@@ -153,11 +140,36 @@ body {
         text-decoration: none;
       }
     }
+    .nav_bx {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      .nav_item {
+        font-size: 15px;
+        padding: 34px 30px 30px;
+        letter-spacing: 1px;
+        line-height: 20px;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: all 500ms ease;
+        &:hover {
+          color: #f2cc2b;
+          background-color: #25313d;
+        }
+      }
+      .nav_heading_link {
+        color: #fff;
+        text-decoration: none;
+      }
+      .active_item {
+        color: #f2cc2b;
+        background-color: #25313d;
+        opacity: 0.7;
+      }
+    }
   }
 }
-
 // Button
-
 .custom_button {
   color: #2c3e50;
   top: 20px;
@@ -200,7 +212,6 @@ body {
     }
   }
 }
-
 .secondary_custom_button {
   color: #fff;
   top: 20px;

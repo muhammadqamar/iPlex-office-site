@@ -31,14 +31,14 @@ const Herosection = ({ data }) => {
             </div>
           </div>
         </div>
-        <Link to="#scroll-down">
-          <div className="design-logo">
-            <div className="design">
-              <span className="animaction-vr-line" />
-            </div>
-            <div className="down-vr-line" />
+        {/* <Link to="#scroll-down"> */}
+        {/* <Link to="#scroll-down" className="design-logo">
+          <div className="design">
+            <span className="animaction-vr-line" />
           </div>
-        </Link>
+          <div className="down-vr-line" />
+        </Link> */}
+        {/* </Link> */}
       </div>
     </>
   )

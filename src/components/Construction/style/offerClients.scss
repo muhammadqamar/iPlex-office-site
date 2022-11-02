@@ -93,10 +93,13 @@
       .tab_container {
         display: flex;
         gap: 30px;
-        // flex-wrap: wrap;
         .tab_item {
           grid-row-start: 1;
           grid-row-end: 3;
+          .tab_img {
+            width: 613px;
+            height: 100%;
+          }
         }
         .tab_info_content {
           padding: 10px;

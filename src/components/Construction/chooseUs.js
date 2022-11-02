@@ -4,7 +4,7 @@ import "./style/chooseUs.scss"
 import listlogo1 from "../../assets/images/choose_card_logo1.png"
 import listlogo2 from "../../assets/images/choose_card_logo2.png"
 import listlogo3 from "../../assets/images/choose_card_logo3.png"
-import rightimg from "../../assets/images/choose_right_img.jpg"
+import rightimg from "../../assets/images/choose_right_img.webp"
 import rightarrow from "../../assets/images/choose_arrow_logo_color.svg"
 
 const cards_lists = [

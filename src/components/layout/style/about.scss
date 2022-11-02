@@ -5,7 +5,6 @@
   position: fixed;
   z-index: 4;
   transition: all ease-in-out 0.4s;
-
   .about-informactiion {
     max-width: 1440px;
     padding: 140px 230px 100px;
@@ -13,7 +12,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
     @media (max-width: 1024px) {
       padding: 140px 30px 100px;
     }
@@ -21,11 +19,9 @@
       padding: 90px 30px 10px;
       flex-direction: column;
     }
-
     .pages-name {
       width: 273.75px;
       color: #fff;
-
       .page-name-1 {
         font-size: 54px;
         font-weight: 700;
@@ -38,7 +34,6 @@
           margin-bottom: 15px;
           line-height: 40.1px;
         }
-
         cursor: pointer;
         &:hover {
           color: #f9d633;
@@ -55,7 +50,6 @@
         font-weight: 500;
         line-height: 39.9px;
         color: #fff;
-
         @media (max-width: 767px) {
           font-size: 18px;
         }
@@ -77,13 +71,11 @@
         @media (max-width: 767px) {
           font-size: 18px;
         }
-
         &:hover {
           color: #f9d633;
         }
       }
     }
-
     .contact-btn {
       text-align: left;
       width: 12%;
@@ -94,7 +86,6 @@
         display: block;
         margin-top: 20px;
       }
-
       .link-btn {
         color: #f9d633;
         font-size: 20px;

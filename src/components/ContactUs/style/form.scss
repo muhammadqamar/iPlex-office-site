@@ -24,7 +24,6 @@
     .form-box {
       display: flex;
       justify-content: space-between;
-      // align-items: center;
       @media (max-width: 768px) {
         flex-wrap: wrap;
       }
@@ -68,7 +67,6 @@
             color: #f9d633;
             font-weight: normal;
             line-height: 19.512px;
-            // width: 400px;
           }
         }
       }
@@ -113,7 +111,6 @@
             color: #f9d633;
             font-weight: normal;
             line-height: 19.512px;
-            // width: 400px;
           }
           .input {
             font-size: 18px !important;
@@ -124,9 +121,7 @@
             padding-bottom: 9px !important;
             font-weight: 300;
             color: #fff;
-
             outline: none;
-
             width: 100%;
             &::placeholder {
               color: #fff;

@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="footer-boxs">
           <div className="footer-logo">
             <a href="https://iplex.co">
-              <img src={IplexLogo}></img>
+              <img src={IplexLogo} alt="logo"></img>
             </a>
           </div>
           <div className="footre-pages">

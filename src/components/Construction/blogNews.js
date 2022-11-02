@@ -1,11 +1,11 @@
 import React from "react"
 import "./style/blogNews.scss"
 
-import userconstruction from "../../assets/images/blog_img.jpg"
+import userconstruction from "../../assets/images/blog_img.webp"
 import blogicon from "../../assets/images/user.svg"
 import blogicon3 from "../../assets/images/speech-bubble.svg"
 import Rightarrow from "../../assets/images/right_arrow-white.svg"
-import blogright from "../../assets/images/blog_rightImg.jpg"
+import blogright from "../../assets/images/blog_rightImg.webp"
 
 const blogData = [
   {
