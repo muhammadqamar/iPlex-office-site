@@ -3,7 +3,7 @@ templateKey: home
 hero:
   heading: Where your ideas evolve into products.
   description: iPlex helps all kinds of ambitious businesses to improve their
-    digital presence and make digital work for them commercially. Find out more
+    digital presence and make digital work for them  commercially. Find out more
     about who we are.
   headerLink:
     linkName: Meet the team
@@ -20,43 +20,37 @@ digitalFuture:
     introCards:
       cards:
         - cardheading: Dvelopment
-          cardDescription:
-            Our code crafters plan for progressive solutions placed on the
+          cardDescription: Our code crafters plan for progressive solutions placed on the
             right platforms to enhance the user experience. They focus on
             building top-quality, high-performing custom solutions that are
             easily scalable.
           cardNumber: 1
         - cardheading: Testing
-          cardDescription:
-            Our code crafters plan for progressive solutions placed on the
+          cardDescription: Our code crafters plan for progressive solutions placed on the
             right platforms to enhance the user experience. They focus on
             building top-quality, high-performing custom solutions that are
             easily scalable.
           cardNumber: 2
         - cardheading: Launch
-          cardDescription:
-            Our code crafters plan for progressive solutions placed on the
+          cardDescription: Our code crafters plan for progressive solutions placed on the
             right platforms to enhance the user experience. They focus on
             building top-quality, high-performing custom solutions that are
             easily scalable.
           cardNumber: 3
         - cardheading: Discovery
-          cardDescription:
-            Our code crafters plan for progressive solutions placed on the
+          cardDescription: Our code crafters plan for progressive solutions placed on the
             right platforms to enhance the user experience. They focus on
             building top-quality, high-performing custom solutions that are
             easily scalable.
           cardNumber: 4
         - cardheading: Strategy
-          cardDescription:
-            Our code crafters plan for progressive solutions placed on the
+          cardDescription: Our code crafters plan for progressive solutions placed on the
             right platforms to enhance the user experience. They focus on
             building top-quality, high-performing custom solutions that are
             easily scalable.
           cardNumber: 5
         - cardheading: Design
-          cardDescription:
-            Our code crafters plan for progressive solutions placed on the
+          cardDescription: Our code crafters plan for progressive solutions placed on the
             right platforms to enhance the user experience. They focus on
             building top-quality, high-performing custom solutions that are
             easily scalable.
