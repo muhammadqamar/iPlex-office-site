@@ -19,7 +19,7 @@ digitalFuture:
     link: https://iplex.co/team/
     introCards:
       cards:
-        - cardheading: Dvelopment
+        - cardheading: Development
           cardDescription: Our code crafters plan for progressive solutions placed on the
             right platforms to enhance the user experience. They focus on
             building top-quality, high-performing custom solutions that are
