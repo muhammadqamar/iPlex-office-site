@@ -9,7 +9,7 @@ hero:
     linkName: Meet the team
     linkUrl: https://iplex.co/team/
 digitalFuture:
-  headingone: Let’s talk about your digital future
+  headingone: Let’s talk about your digital futureee
   descriptions: Do you like to  work with  us and shape your next digital product?
     Got an awesome idea of how to excite and delight your users? Or do you want
     to become a iPlexians? We’re curious - let’s talk!
