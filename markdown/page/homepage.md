@@ -7,7 +7,7 @@ hero:
     about who we are.
   headerLink:
     linkName: Meet the team
-    linkUrl: https://iplex.co/team/
+    linkUrl: http://localhost:8000/team
 digitalFuture:
   headingone: Let’s talk about your digital future
   descriptions: Do you like to  work with  us and shape your next digital product?
