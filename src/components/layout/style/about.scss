@@ -45,6 +45,13 @@
       :first-child {
         margin-bottom: 15px;
       }
+      .flx_box {
+        display: flex;
+        flex-direction: column;
+        a {
+          margin: 0;
+        }
+      }
       .addres-name {
         font-size: 21px;
         font-weight: 500;

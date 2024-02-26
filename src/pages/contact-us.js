@@ -4,7 +4,7 @@ import ContactUsPage from "../components/ContactUs"
 
 const ContactUs = () => {
   return (
-    <Layout>
+    <Layout backgroundColor="black">
       <ContactUsPage />
     </Layout>
   )

@@ -27,8 +27,14 @@ const About = () => {
           <h4 className="addres-name">
             Bahria Town Civic Center, Phase 4 Plaza 75, Pakistan
           </h4>
-          <h4 className="addres-name  hon-li">hr@iplex.co</h4>
-          <h4 className="addres-name hon-li">+92 51 541 1278</h4>
+          <div className="flx_box">
+            <a className="addres-name  hon-li" href="mailto:hr@iplex.co">
+              hr@iplex.co
+            </a>
+            <a className="addres-name hon-li" href="tel:+92 51 541 1278">
+              +92 51 541 1278
+            </a>
+          </div>
         </div>
         <div className="media-links">
           <Link style={{ textDecoration: "none" }} to="/">

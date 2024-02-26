@@ -160,3 +160,8 @@
     }
   }
 }
+@media (max-width: 1209px) {
+  .tab_container {
+    flex-direction: column;
+  }
+}
